@@ -28,6 +28,11 @@ public class Monster : MonoBehaviour
     void monsterDead()
     {
         Debug.Log("Die");
+        StartCoroutine(Wait());
         Destroy(gameObject);
+    }
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1);
     }
 }

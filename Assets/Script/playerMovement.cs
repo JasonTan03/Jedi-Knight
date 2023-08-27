@@ -13,6 +13,7 @@ public class playerMovement : MonoBehaviour
     private bool lookRight = true;
     public bool isalive = true;
     public Rigidbody2D player;
+    public Animator animator;
 
     //dash
     private bool canDash = true;
@@ -41,8 +42,10 @@ public class playerMovement : MonoBehaviour
         }
         if (isalive == true) {
             move = Input.GetAxisRaw("Horizontal");
+            animator.SetFloat("move", Mathf.Abs((move*movementSpeed)));
             Flip();
             player.velocity = new Vector2(move * movementSpeed, player.velocity.y);
+            
         }
 
         Flip();

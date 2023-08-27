@@ -11,6 +11,8 @@ public class PlayerAtack : MonoBehaviour
     public float attackPower;
     public float attackRate = 2f;
     float nextAttackTime = 0f;
+    bool lightattack;
+    bool leftattack;
 
     public Transform attackPoint;
     public LayerMask enemyLayers;
@@ -29,6 +31,7 @@ public class PlayerAtack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (Time.time >= nextAttackTime)
         {
             if (Input.GetKeyDown(KeyCode.J) && player.isalive == true)
@@ -50,6 +53,7 @@ public class PlayerAtack : MonoBehaviour
 
     void LightAttack()
     {
+        animator.SetTrigger("LightAttack");
         Collider2D[] hit = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         Debug.Log("Light Attack");
         foreach (Collider2D enemy in hit)
@@ -60,6 +64,7 @@ public class PlayerAtack : MonoBehaviour
     }
     void HeavyAttack()
     {
+        animator.SetTrigger("HeavyAttack");
         Collider2D[] hit = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         Debug.Log("Heavy Attack");
         foreach (Collider2D enemy in hit)
