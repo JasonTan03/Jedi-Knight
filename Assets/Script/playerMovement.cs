@@ -27,8 +27,14 @@ public class playerMovement : MonoBehaviour
     public staminabar enegry;
     //health
     public HeatlhBar health;
+
+    //audio
+    AudioManager audioManager;
+
+
     void Start()
     {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         enegry = GameObject.FindGameObjectWithTag("Stamina").GetComponent<staminabar>();
         health = GameObject.FindGameObjectWithTag("Health").GetComponent<HeatlhBar>();
     }
@@ -52,6 +58,7 @@ public class playerMovement : MonoBehaviour
 
         if (((Input.GetKeyDown(KeyCode.Space) == true)|| (Input.GetKeyDown(KeyCode.W) == true)) && isalive == true && !isJumping)
         {
+            audioManager.playSFX(audioManager.jump);
             player.velocity = Vector2.up * jumpPower;
             isJumping = true;
         }

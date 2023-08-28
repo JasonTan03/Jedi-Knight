@@ -9,6 +9,7 @@ TagManager:
   - spike
   - Health
   - Sword
+  - Audio
   layers:
   - Default
   - TransparentFX

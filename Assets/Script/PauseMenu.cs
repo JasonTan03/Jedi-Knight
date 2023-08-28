@@ -40,7 +40,10 @@ public class PauseMenu : MonoBehaviour
 
     public void Home()
     {
-        SceneManager.LoadScene("Main Menu"); 
+        SceneManager.LoadScene("Main Menu");
+        isPause = false;
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
     }
 
 }
