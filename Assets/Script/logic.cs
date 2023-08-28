@@ -20,7 +20,7 @@ public class logic : MonoBehaviour
     {
         if (collision.gameObject.layer == 3)
         {
-            health.DecreaseHP();
+            health.DecreaseHP(10f);
         }
     }
 }

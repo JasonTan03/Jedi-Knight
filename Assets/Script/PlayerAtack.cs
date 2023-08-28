@@ -11,8 +11,6 @@ public class PlayerAtack : MonoBehaviour
     public float attackPower;
     public float attackRate = 2f;
     float nextAttackTime = 0f;
-    bool lightattack;
-    bool leftattack;
 
     public Transform attackPoint;
     public LayerMask enemyLayers;
