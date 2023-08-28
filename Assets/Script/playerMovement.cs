@@ -9,7 +9,7 @@ public class playerMovement : MonoBehaviour
     public float movementSpeed;
     public float jumpPower;
     private float move;
-    private bool isJumping;
+    public bool isJumping;
     private bool lookRight = true;
     public bool isalive = true;
     public Rigidbody2D player;

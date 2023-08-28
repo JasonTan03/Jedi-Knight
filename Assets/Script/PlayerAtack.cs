@@ -34,7 +34,7 @@ public class PlayerAtack : MonoBehaviour
         
         if (Time.time >= nextAttackTime)
         {
-            if (Input.GetKeyDown(KeyCode.J) && player.isalive == true)
+            if (Input.GetKeyDown(KeyCode.J) && player.isalive == true && player.isJumping == false)
             {
                 LightAttack();
                 nextAttackTime = Time.time + 2f / attackRate;
@@ -42,11 +42,11 @@ public class PlayerAtack : MonoBehaviour
         }
         if (Time.time >= nextAttackTime)
         {
-            if (Input.GetKeyDown(KeyCode.K) && player.isalive == true && enegry.stamina > 10)
+            if (Input.GetKeyDown(KeyCode.K) && player.isalive == true && enegry.stamina > 10 && player.isJumping == false)
             {
                 enegry.DecreaseStamina(10f);
                 HeavyAttack();
-                nextAttackTime = Time.time + 4f / attackRate;
+                nextAttackTime = Time.time + 2f / attackRate;
             }
         }
     }
