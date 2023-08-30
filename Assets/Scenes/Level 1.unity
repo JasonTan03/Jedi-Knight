@@ -1684,6 +1684,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!212 &1082034553 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5192011874514281600, guid: d3cc36e4ef7a35b45bf740e21e4c66b1, type: 3}
+  m_PrefabInstance: {fileID: 3372183866475075538}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1102927623
 GameObject:
   m_ObjectHideFlags: 0
@@ -3213,6 +3218,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5685430087662904347, guid: d3cc36e4ef7a35b45bf740e21e4c66b1, type: 3}
+      propertyPath: sr
+      value: 
+      objectReference: {fileID: 1082034553}
     - target: {fileID: 5936254212913624400, guid: d3cc36e4ef7a35b45bf740e21e4c66b1, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -3265,9 +3274,7 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5541278174791860828, guid: d3cc36e4ef7a35b45bf740e21e4c66b1, type: 3}
-    - {fileID: 6121339357512908568, guid: d3cc36e4ef7a35b45bf740e21e4c66b1, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

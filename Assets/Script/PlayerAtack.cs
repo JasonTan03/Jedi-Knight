@@ -56,7 +56,7 @@ public class PlayerAtack : MonoBehaviour
         Debug.Log("Light Attack");
         foreach (Collider2D enemy in hit)
         {
-            enemy.GetComponent<Monster>().takeDamage((int)(attackPower + sword.AttackPower));
+            enemy.GetComponent<Monster>().TakeDamage((int)(attackPower + sword.AttackPower));
             Debug.Log("hit");
         }
     }
@@ -67,10 +67,11 @@ public class PlayerAtack : MonoBehaviour
         Debug.Log("Heavy Attack");
         foreach (Collider2D enemy in hit)
         {
-            enemy.GetComponent<Monster>().takeDamage((int)((attackPower + sword.AttackPower) * 1.5));
+            enemy.GetComponent<Monster>().TakeDamage((int)((attackPower + sword.AttackPower) * 1.5));
             Debug.Log("hit");
         }
     }
+
     private void OnDrawGizmosSelected()
     {
         if (attackPoint == null)

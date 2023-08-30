@@ -94,8 +94,6 @@ GameObject:
   - component: {fileID: 5685430087662904347}
   - component: {fileID: 3296587316495405618}
   - component: {fileID: 3283623063466711912}
-  - component: {fileID: 5541278174791860828}
-  - component: {fileID: 6121339357512908568}
   - component: {fileID: 7514980411167418471}
   m_Layer: 6
   m_Name: Minion
@@ -121,7 +119,7 @@ Transform:
   - {fileID: 8467328380302827060}
   - {fileID: 1766769711207687382}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5192011874514281600
 SpriteRenderer:
@@ -258,36 +256,6 @@ Animator:
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &3283623063466711912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5099177870312575728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95790dcb1b573d648a8de281a1d42620, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  moveSpeed: 1.5
-  animator: {fileID: 3296587316495405618}
---- !u!114 &5541278174791860828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5099177870312575728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95790dcb1b573d648a8de281a1d42620, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  moveSpeed: 1.5
-  animator: {fileID: 3296587316495405618}
---- !u!114 &6121339357512908568
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
