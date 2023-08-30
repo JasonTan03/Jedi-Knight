@@ -10,6 +10,7 @@ TagManager:
   - Health
   - Sword
   - Audio
+  - Monster
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Water
   - UI
   - test
-  - 
+  - Monster
   - 
   - 
   - 
@@ -46,4 +47,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Monster health
+    uniqueID: 1048066521
     locked: 0

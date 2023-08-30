@@ -67,7 +67,7 @@ public class PlayerAtack : MonoBehaviour
         Debug.Log("Heavy Attack");
         foreach (Collider2D enemy in hit)
         {
-            enemy.GetComponent<Monster>().takeDamage((int)((attackPower + sword.AttackPower)* 1.5));
+            enemy.GetComponent<Monster>().takeDamage((int)((attackPower + sword.AttackPower) * 1.5));
             Debug.Log("hit");
         }
     }
