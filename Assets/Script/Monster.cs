@@ -28,7 +28,7 @@ public class Monster : MonoBehaviour
     public void TakeDamage(int attackPower)
     {
         // Tints the sprite red and fades back to the origin color after a delay of 1 second
-        StartCoroutine(DamageEffectSequence(sr, Color.red, 2, 1));
+        StartCoroutine(DamageEffectSequence(sr, Color.red, 0.5f, 0.5f));
         health -= attackPower;
         if (health <= 0)
         {
