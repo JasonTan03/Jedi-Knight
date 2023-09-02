@@ -5,7 +5,7 @@ using UnityEngine;
 public class Monster : MonoBehaviour
 {
     
-    public int health = 100;
+    public float health = 100;
     public float damage;
     public HeatlhBar playerHealth;
     public ChasePlayer mon;

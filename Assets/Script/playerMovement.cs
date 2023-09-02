@@ -59,12 +59,14 @@ public class playerMovement : MonoBehaviour
         if (((Input.GetKeyDown(KeyCode.Space) == true)|| (Input.GetKeyDown(KeyCode.W) == true)) && isalive == true && !isJumping)
         {
             audioManager.playSFX(audioManager.jump);
+            animator.SetTrigger("Jump");
             player.velocity = Vector2.up * jumpPower;
             isJumping = true;
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift) == true && isalive == true && canDash && enegry.stamina > 20)
         {
+            animator.SetTrigger("IsDashing");
             enegry.DecreaseStamina(20f);
             StartCoroutine(Dash());
         }
@@ -72,6 +74,7 @@ public class playerMovement : MonoBehaviour
 
         if (health.hp == 0)
         {
+            animator.SetTrigger("Death");
             isalive = false;
         }
 

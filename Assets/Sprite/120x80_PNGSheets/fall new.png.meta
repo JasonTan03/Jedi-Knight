@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bebccb2b036b8b54c81c4a30347c4c56
+guid: 624e4bbb63951234ba7f983078d40d70
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: _Jump_0
+      name: fall new_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 120
-        height: 80
+        width: 237
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 374b012cd8225f84bb7336ca769c718b
-      internalID: 1107352178
+      spriteID: a30666acfd8fb9949ba2adba97911efa
+      internalID: 1109531849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Jump_1
+      name: fall new_1
       rect:
         serializedVersion: 2
-        x: 120
+        x: 237
         y: 0
-        width: 120
-        height: 80
+        width: 237
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,29 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d43fd28084b997841b913f395cabf657
-      internalID: -74854359
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: _Jump_2
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 0
-        width: 120
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80707c59ae357d049ad02379b55a7314
-      internalID: 681904716
+      spriteID: 62bf89ceb538d124184dc9721eb6bf56
+      internalID: 2071837585
       vertices: []
       indices: 
       edges: []
@@ -196,9 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      _Jump_0: 1107352178
-      _Jump_1: -74854359
-      _Jump_2: 681904716
+      fall new_0: 1109531849
+      fall new_1: 2071837585
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
