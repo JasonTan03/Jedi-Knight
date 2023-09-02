@@ -1,85 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1819263115962853811
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8467328380302827060}
-  - component: {fileID: 3694403108006899175}
-  - component: {fileID: 8597461362798303342}
-  m_Layer: 6
-  m_Name: Range
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8467328380302827060
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819263115962853811}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.784, y: -0.085, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5936254212913624400}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &3694403108006899175
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819263115962853811}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.77914053, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.2521367
---- !u!114 &8597461362798303342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819263115962853811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84703ac206fe0f140a2691e0099a5b36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5099177870312575728
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,7 +15,7 @@ GameObject:
   - component: {fileID: 3296587316495405618}
   - component: {fileID: 3283623063466711912}
   - component: {fileID: 7514980411167418471}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Minion
   m_TagString: Monster
   m_Icon: {fileID: 0}
@@ -116,8 +36,6 @@ Transform:
   m_Children:
   - {fileID: 6541681500954459846}
   - {fileID: 3588753826055995784}
-  - {fileID: 8467328380302827060}
-  - {fileID: 1766769711207687382}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -227,13 +145,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5099177870312575728}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d68a8b54c505fd40b7d7017ac4c01b7, type: 3}
+  m_Script: {fileID: 11500000, guid: dda02e9774f5178488285f7310d45c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
   damage: 5
   playerHealth: {fileID: 0}
   mon: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!95 &3296587316495405618
 Animator:
   serializedVersion: 5
@@ -264,12 +183,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5099177870312575728}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95790dcb1b573d648a8de281a1d42620, type: 3}
+  m_Script: {fileID: 11500000, guid: 0a806a83353185041b8edf038b602fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  moveSpeed: 1.5
-  animator: {fileID: 3296587316495405618}
+  moveSpeed: 1
+  animator: {fileID: 0}
 --- !u!50 &7514980411167418471
 Rigidbody2D:
   serializedVersion: 4
@@ -308,7 +227,7 @@ GameObject:
   - component: {fileID: 6541681500954459846}
   - component: {fileID: 8972296111157025490}
   - component: {fileID: 6787294470920393478}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +326,7 @@ GameObject:
   - component: {fileID: 3588753826055995784}
   - component: {fileID: 8099938060582472497}
   - component: {fileID: 7834412579128543397}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,87 +392,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5359499063473208319}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84703ac206fe0f140a2691e0099a5b36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &7167442008290912641
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1766769711207687382}
-  - component: {fileID: 5884577772223167387}
-  - component: {fileID: 7539645496065652983}
-  m_Layer: 6
-  m_Name: Range
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1766769711207687382
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7167442008290912641}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.784, y: -0.085, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5936254212913624400}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &5884577772223167387
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7167442008290912641}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.77914053, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.2521367
---- !u!114 &7539645496065652983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7167442008290912641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84703ac206fe0f140a2691e0099a5b36, type: 3}
+  m_Script: {fileID: 11500000, guid: b4fda7353a7885d41850d3d6bfb9747f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7758097813406324205
@@ -566,7 +405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5521366812137349282}
   - component: {fileID: 100961486485597395}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: HealthBg
   m_TagString: Untagged
   m_Icon: {fileID: 0}

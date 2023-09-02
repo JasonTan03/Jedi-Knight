@@ -37,7 +37,7 @@ Transform:
   m_Children:
   - {fileID: 4090933532443274286}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -0.271, z: 0}
 --- !u!212 &9180686604109236760
 SpriteRenderer:
@@ -177,6 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 7
   jumpPower: 15
+  isJumping: 0
   isalive: 1
   player: {fileID: 1632467133791505551}
   animator: {fileID: 441639586906596858}
@@ -318,7 +319,7 @@ MonoBehaviour:
   attackPoint: {fileID: 4090933532443274286}
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   sword: {fileID: 0}
   player: {fileID: 0}
   enegry: {fileID: 0}

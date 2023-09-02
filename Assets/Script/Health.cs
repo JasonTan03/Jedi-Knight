@@ -16,7 +16,7 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        localScale.x = mon.health;
         transform.localScale = localScale;
     }
 }
