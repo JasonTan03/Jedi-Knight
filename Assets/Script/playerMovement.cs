@@ -74,11 +74,10 @@ public class playerMovement : MonoBehaviour
 
         if (health.hp == 0)
         {
-            animator.SetTrigger("Death");
+            animator.SetBool("Death",true);
             isalive = false;
         }
 
-        
     }
 
     void OnCollisionEnter2D(Collision2D ground)

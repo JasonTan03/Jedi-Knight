@@ -11,6 +11,12 @@ public class ChasePlayer : MonoBehaviour
     {
         followTarget();
     }
+    private void flip()
+    {
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1;
+        transform.localScale = localScale;
+    }
 
     private void followTarget()
     {
@@ -19,7 +25,7 @@ public class ChasePlayer : MonoBehaviour
             Vector2 distance = target.position - transform.position;
 
             transform.Translate(new Vector3(distance.x, 0, 0) * moveSpeed * Time.deltaTime);
-            
+            flip();
         }
     }
 

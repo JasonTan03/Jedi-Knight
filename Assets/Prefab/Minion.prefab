@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3296587316495405618}
   - component: {fileID: 3283623063466711912}
   - component: {fileID: 7514980411167418471}
+  - component: {fileID: 2144270224586296566}
   m_Layer: 7
   m_Name: Minion
   m_TagString: Monster
@@ -152,7 +153,7 @@ MonoBehaviour:
   damage: 5
   playerHealth: {fileID: 0}
   mon: {fileID: 0}
-  sr: {fileID: 0}
+  sr: {fileID: 5192011874514281600}
 --- !u!95 &3296587316495405618
 Animator:
   serializedVersion: 5
@@ -201,7 +202,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -216,6 +217,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2144270224586296566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5099177870312575728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba2a2bab1d692c8449aee9200f93fa45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
 --- !u!1 &5343662678098692798
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,8 +242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6541681500954459846}
   - component: {fileID: 8972296111157025490}
-  - component: {fileID: 6787294470920393478}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,19 +317,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6787294470920393478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5343662678098692798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9048998b38a337443af778661bf21c18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mon: {fileID: 0}
 --- !u!1 &5359499063473208319
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +328,7 @@ GameObject:
   - component: {fileID: 3588753826055995784}
   - component: {fileID: 8099938060582472497}
   - component: {fileID: 7834412579128543397}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -405,7 +407,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5521366812137349282}
   - component: {fileID: 100961486485597395}
-  m_Layer: 5
+  - component: {fileID: 7514995238144027568}
+  m_Layer: 7
   m_Name: HealthBg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -479,3 +482,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7514995238144027568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7758097813406324205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9048998b38a337443af778661bf21c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mon: {fileID: 5685430087662904347}

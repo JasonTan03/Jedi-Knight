@@ -11,6 +11,7 @@ public class HeatlhBar : MonoBehaviour
     public float decrease;
     public float regenerate;
     public float damage;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class HeatlhBar : MonoBehaviour
 
     public void DecreaseHP(float damage)
     {
+        animator.SetTrigger("playerHit");
         if (hp != 0)
         {
             if (hp != 0)
