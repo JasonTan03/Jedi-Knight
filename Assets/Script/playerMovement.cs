@@ -66,6 +66,7 @@ public class playerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift) == true && isalive == true && canDash && enegry.stamina > 20)
         {
+            audioManager.playSFX(audioManager.dash);
             animator.SetTrigger("IsDashing");
             enegry.DecreaseStamina(20f);
             StartCoroutine(Dash());

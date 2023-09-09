@@ -1006,7 +1006,7 @@ PrefabInstance:
     - target: {fileID: 3583256300108150861, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: e33e6a31414f7b8459cb7c4dd3bdf789, type: 3}
+      objectReference: {fileID: 8300000, guid: fce6fbaefb8560f46b4c7040c7973056, type: 3}
     - target: {fileID: 3810647670811060740, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
       propertyPath: m_TagString
       value: Untagged
@@ -1119,7 +1119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5238312944319056938, guid: d6fc65bb99d30e14684cb19770fc09d3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000020980835
+      value: -0.000015258789
       objectReference: {fileID: 0}
     - target: {fileID: 5238312944319056938, guid: d6fc65bb99d30e14684cb19770fc09d3, type: 3}
       propertyPath: m_AnchoredPosition.y

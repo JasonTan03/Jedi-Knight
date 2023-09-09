@@ -19,8 +19,12 @@ public class PlayerAtack : MonoBehaviour
     public playerMovement player;
     public staminabar enegry;
     // Start is called before the first frame update
+
+    //audio
+    AudioManager audioManager;
     void Start()
     {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         sword = GameObject.FindGameObjectWithTag("Sword").GetComponent<Sword>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerMovement>();
         enegry = GameObject.FindGameObjectWithTag("Stamina").GetComponent<staminabar>();
@@ -51,6 +55,7 @@ public class PlayerAtack : MonoBehaviour
 
     void LightAttack()
     {
+        audioManager.playSFX(audioManager.attack);
         animator.SetTrigger("LightAttack");
         Collider2D[] hit = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         Debug.Log("Light Attack");
@@ -62,6 +67,7 @@ public class PlayerAtack : MonoBehaviour
     }
     void HeavyAttack()
     {
+        audioManager.playSFX(audioManager.attack);
         animator.SetTrigger("HeavyAttack");
         Collider2D[] hit = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         Debug.Log("Heavy Attack");

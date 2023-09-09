@@ -4891,11 +4891,27 @@ PrefabInstance:
     - target: {fileID: 3583256300108150861, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: dc5ee2c815b82ec4e82ce6e69761265f, type: 3}
+      objectReference: {fileID: 8300000, guid: 51c45f0830517844183b75e1bb18d48a, type: 3}
+    - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 8300000, guid: f1c7d0a91c56bd24cae71767231150d7, type: 3}
+    - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
+      propertyPath: dash
+      value: 
+      objectReference: {fileID: 8300000, guid: 89062b6bafe907241a13df0b50866a1c, type: 3}
     - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
       propertyPath: jump
       value: 
-      objectReference: {fileID: 8300000, guid: cc73c6091fae4354a8ca41dc74f0305b, type: 3}
+      objectReference: {fileID: 8300000, guid: 099edf08b57f9e54bae1c4234077240c, type: 3}
+    - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
+      propertyPath: c_hit
+      value: 
+      objectReference: {fileID: 8300000, guid: b1b218564e98c2e4a98c98679204daeb, type: 3}
+    - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 8300000, guid: 2922ec1490dcf1e48b03afed2878f5bb, type: 3}
     - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
       propertyPath: sfxSource
       value: 
@@ -5233,6 +5249,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.379
       objectReference: {fileID: 0}
+    - target: {fileID: 8756819703974247763, guid: ed60657088d757d48845daef5636c0e0, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 44f6383190f4ffb408ae4e57111150c8, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
