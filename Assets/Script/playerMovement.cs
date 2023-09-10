@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental;
 using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
     // Start is called before the first frame update
     //movement
+    public PlayerDeath playerDeath;
     public float movementSpeed;
     public float jumpPower;
     private float move;
@@ -78,6 +80,7 @@ public class playerMovement : MonoBehaviour
         {
             animator.SetBool("Death",true);
             isalive = false;
+            
         }
 
     }

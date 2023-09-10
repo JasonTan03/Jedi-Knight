@@ -609,6 +609,7 @@ GameObject:
   - component: {fileID: 97106062}
   - component: {fileID: 97106064}
   - component: {fileID: 97106063}
+  - component: {fileID: 97106065}
   m_Layer: 5
   m_Name: DeathBackgroud
   m_TagString: Untagged
@@ -678,6 +679,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97106061}
   m_CullTransparentMesh: 1
+--- !u!114 &97106065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97106061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed1f83523261cb34a99c0196245dea2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
 --- !u!4 &97782404 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6131029985255248732, guid: ed60657088d757d48845daef5636c0e0, type: 3}
@@ -971,7 +985,7 @@ SpriteRenderer:
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &249847904
@@ -1637,7 +1651,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 389779790}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 335926004}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &389779790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2897,7 +2923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c382f9afc3b3350439d8cf74253c0ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 1000
+  hp: 100
   maxhp: 0
   hpBar: {fileID: 1971755134}
   decrease: 5
@@ -4125,9 +4151,9 @@ RectTransform:
   - {fileID: 36055134}
   - {fileID: 2039042673}
   - {fileID: 335926000}
-  - {fileID: 1917774221}
   - {fileID: 1821842345}
   - {fileID: 97106062}
+  - {fileID: 1917774221}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4761,7 +4787,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1971494480}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 97106065}
+        m_TargetAssemblyTypeName: PlayerDeath, Assembly-CSharp
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1971494480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5560,6 +5598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 569057674754470859, guid: ed60657088d757d48845daef5636c0e0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1632467133791505551, guid: ed60657088d757d48845daef5636c0e0, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -5580,6 +5622,10 @@ PrefabInstance:
       propertyPath: jumpPower
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 4683618290402808553, guid: ed60657088d757d48845daef5636c0e0, type: 3}
+      propertyPath: playerDeath
+      value: 
+      objectReference: {fileID: 97106065}
     - target: {fileID: 5912967956042116093, guid: ed60657088d757d48845daef5636c0e0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

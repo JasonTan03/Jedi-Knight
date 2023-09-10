@@ -13,7 +13,6 @@ public class Health : MonoBehaviour
     void Start()
     {
         localScale = orignalScale = transform.localScale;
-        mon = GameObject.FindGameObjectWithTag("Monster").GetComponent<Monster>();
     }
 
     // Update is called once per frame
