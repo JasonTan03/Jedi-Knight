@@ -12,7 +12,6 @@ public class Health : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-     
         localScale = orignalScale = transform.localScale;
         mon = GameObject.FindGameObjectWithTag("Monster").GetComponent<Monster>();
     }
@@ -20,7 +19,6 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         localScale.x = (mon.health/100f) * orignalScale.x;
         transform.localScale = localScale;
     }

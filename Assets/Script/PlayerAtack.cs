@@ -11,6 +11,7 @@ public class PlayerAtack : MonoBehaviour
     public float attackPower;
     public float attackRate = 2f;
     float nextAttackTime = 0f;
+    public static int critRate;
 
     public Transform attackPoint;
     public LayerMask enemyLayers;
@@ -61,8 +62,17 @@ public class PlayerAtack : MonoBehaviour
         Debug.Log("Light Attack");
         foreach (Collider2D enemy in hit)
         {
+            if (Random.Range(1,10) <= critRate)
+            {
+                enemy.GetComponent<Monster>().TakeDamage((int)((attackPower + sword.AttackPower)*2));
+                Debug.Log("Critical hit");
+            }
+            else
+            {
                 enemy.GetComponent<Monster>().TakeDamage((int)(attackPower + sword.AttackPower));
                 Debug.Log("hit");
+            }
+                
         }
     }
     void HeavyAttack()
@@ -73,8 +83,17 @@ public class PlayerAtack : MonoBehaviour
         Debug.Log("Heavy Attack");
         foreach (Collider2D enemy in hit)
         {
-            enemy.GetComponent<Monster>().TakeDamage((int)((attackPower + sword.AttackPower) * 1.5));
-            Debug.Log("hit");
+            if (Random.Range(1, 10) <= critRate)
+            {
+                enemy.GetComponent<Monster>().TakeDamage((int)(((attackPower + sword.AttackPower) * 1.5)*2));
+                Debug.Log("Critical hit");
+            }
+            else
+            {
+                enemy.GetComponent<Monster>().TakeDamage((int)((attackPower + sword.AttackPower) * 1.5));
+                Debug.Log("hit");
+            }
+
         }
     }
 

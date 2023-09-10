@@ -26,6 +26,7 @@ public class HeatlhBar : MonoBehaviour
         hpBar.value = hp;
     }
 
+
     public void DecreaseHP(float damage)
     {
         animator.SetTrigger("PlayerHit");

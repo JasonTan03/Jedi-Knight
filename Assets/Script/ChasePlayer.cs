@@ -22,10 +22,10 @@ public class ChasePlayer : MonoBehaviour
     {
         if(target != null)
         {
+            //flip();
             Vector2 distance = target.position - transform.position;
 
             transform.Translate(new Vector3(distance.x, 0, 0) * moveSpeed * Time.deltaTime);
-            flip();
         }
     }
 

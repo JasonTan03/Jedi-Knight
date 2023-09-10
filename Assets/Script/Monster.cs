@@ -7,12 +7,14 @@ public class Monster : MonoBehaviour
     
     public float health = 100;
     public float damage;
-    public HeatlhBar playerHealth;
-    public ChasePlayer mon1;
-    public EnemyPatrol mon2;
+    HeatlhBar playerHealth;
+    ChasePlayer mon1;
+    EnemyPatrol mon2;
     public SpriteRenderer sr;
+    public int delay = 1;
     float tempSpeed1;
     float tempSpeed2;
+    public Animator anim;
 
 
     // Start is called before the first frame update
@@ -32,6 +34,7 @@ public class Monster : MonoBehaviour
 
     public void TakeDamage(int attackPower)
     {
+        anim.SetTrigger("IsHurt");
         // Tints the sprite red and fades back to the origin color after a delay of 1 second
         StartCoroutine(DamageEffectSequence(sr, Color.red, 0.5f, 0.5f));
         health -= attackPower;
@@ -65,13 +68,14 @@ public class Monster : MonoBehaviour
     }
     void monsterDead()
     {
+        anim.SetBool("IsDead",true);
         Debug.Log("Die");
         StartCoroutine(Wait());
         Destroy(gameObject);
     }
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(delay);
     }
     void OnCollisionEnter2D(Collision2D other)
     {

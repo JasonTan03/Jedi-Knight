@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5936254212913624400}
   - component: {fileID: 5192011874514281600}
-  - component: {fileID: 3932466819334872852}
-  - component: {fileID: 5685430087662904347}
   - component: {fileID: 3296587316495405618}
-  - component: {fileID: 3283623063466711912}
+  - component: {fileID: 3932466819334872852}
   - component: {fileID: 7514980411167418471}
+  - component: {fileID: 5685430087662904347}
+  - component: {fileID: 3283623063466711912}
   - component: {fileID: 2144270224586296566}
   m_Layer: 7
   m_Name: Minion
@@ -92,6 +92,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &3296587316495405618
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5099177870312575728}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e6139da1465fe924abeb5ec53437d352, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &3932466819334872852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -137,59 +158,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.82889926, y: 0.7872292}
   m_EdgeRadius: 0
---- !u!114 &5685430087662904347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5099177870312575728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dda02e9774f5178488285f7310d45c66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  damage: 5
-  playerHealth: {fileID: 0}
-  mon: {fileID: 0}
-  sr: {fileID: 5192011874514281600}
---- !u!95 &3296587316495405618
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5099177870312575728}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e6139da1465fe924abeb5ec53437d352, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3283623063466711912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5099177870312575728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a806a83353185041b8edf038b602fa4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  moveSpeed: 1
-  animator: {fileID: 0}
 --- !u!50 &7514980411167418471
 Rigidbody2D:
   serializedVersion: 4
@@ -217,6 +185,39 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &5685430087662904347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5099177870312575728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda02e9774f5178488285f7310d45c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  damage: 5
+  playerHealth: {fileID: 0}
+  mon1: {fileID: 0}
+  mon2: {fileID: 0}
+  sr: {fileID: 5192011874514281600}
+--- !u!114 &3283623063466711912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5099177870312575728}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a806a83353185041b8edf038b602fa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  moveSpeed: 1
+  animator: {fileID: 0}
 --- !u!114 &2144270224586296566
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -23,10 +23,12 @@ public class playerMovement : MonoBehaviour
     public float dashCD;
     public TrailRenderer trail;
 
+    float temp;
+
     //energy
-    public staminabar enegry;
+    staminabar enegry;
     //health
-    public HeatlhBar health;
+    HeatlhBar health;
 
     //audio
     AudioManager audioManager;
@@ -71,7 +73,6 @@ public class playerMovement : MonoBehaviour
             enegry.DecreaseStamina(20f);
             StartCoroutine(Dash());
         }
-
 
         if (health.hp == 0)
         {
