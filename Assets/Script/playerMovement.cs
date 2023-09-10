@@ -59,7 +59,7 @@ public class playerMovement : MonoBehaviour
         if (((Input.GetKeyDown(KeyCode.Space) == true)|| (Input.GetKeyDown(KeyCode.W) == true)) && isalive == true && !isJumping)
         {
             audioManager.playSFX(audioManager.jump);
-            animator.SetTrigger("Jump");
+            animator.SetBool("IsJumping", true);
             player.velocity = Vector2.up * jumpPower;
             isJumping = true;
         }
@@ -86,6 +86,7 @@ public class playerMovement : MonoBehaviour
         if (ground.gameObject.CompareTag("ground"))
         {
             isJumping = false;
+            animator.SetBool("IsJumping",false);
         }
     }
     private void Flip()
