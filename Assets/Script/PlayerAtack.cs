@@ -11,7 +11,7 @@ public class PlayerAtack : MonoBehaviour
     public float attackPower;
     public float attackRate = 2f;
     float nextAttackTime = 0f;
-    public static int critRate;
+    public static int critRate = 2;
 
     public Transform attackPoint;
     public LayerMask enemyLayers;
