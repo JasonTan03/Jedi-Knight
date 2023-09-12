@@ -80,7 +80,7 @@ public class playerMovement : MonoBehaviour
         {
             animator.SetBool("Death",true);
             isalive = false;
-            
+            playerDeath.gameOver();
         }
 
     }

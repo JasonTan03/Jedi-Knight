@@ -22,6 +22,7 @@ public class PlayerDeath : MonoBehaviour
 
     public void Reset()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

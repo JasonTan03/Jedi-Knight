@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class NPC : MonoBehaviour
 {
+    public GameObject player;
+    public GameObject left;
+    public GameObject right;
     public GameObject dialoguePanel;
     public Text dialogueText;
     public string[] dialogue;
@@ -74,14 +77,36 @@ public class NPC : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = true;
+            
         }
+        
     }
 
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            if (player.transform.localScale.x > 0)
+            {
+                left.SetActive(false);
+                right.SetActive(true);
+            }
+            else
+            {
+                right.SetActive(false);
+                left.SetActive(true);
+
+            }
+        }
+        
+    }
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             playerIsClose = false ;
+            left.SetActive(false);
+            right.SetActive(false);
         }
     }
 }
