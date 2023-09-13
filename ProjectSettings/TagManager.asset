@@ -12,6 +12,8 @@ TagManager:
   - Audio
   - Monster
   - PowerUpHealth
+  - PowerUpAttack
+  - PowerUpCritical
   layers:
   - Default
   - TransparentFX

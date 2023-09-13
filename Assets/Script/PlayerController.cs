@@ -5,7 +5,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Color original;
-    private GameObject health;
+    public float incAttack;
+    public float incHealth;
+    public int incCrit;
+    public UImanager UIManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,16 +22,38 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.CompareTag("PowerUpHealth"))
+        if (other.gameObject.CompareTag("PowerUpHealth"))
+        {
+            Destroy(other.gameObject);
+            GetComponent<SpriteRenderer>().color = Color.green;
+            StartCoroutine(Turnback());
+            GetComponentInChildren<HeatlhBar>().maxhp += incHealth;
+            UIManager.takeHealthPowerUp(this.gameObject);
+
+        }
+
+        if (other.gameObject.CompareTag("PowerUpAttack"))
         {
             Destroy(other.gameObject);
             GetComponent<SpriteRenderer>().color = Color.red;
             StartCoroutine(Turnback());
-           
+            GetComponent<PlayerAtack>().attackPower += incAttack;
+            UIManager.takeDamagePowerUp(this.gameObject);
+        }
+
+        if (other.gameObject.CompareTag("PowerUpCritical"))
+        {
+            Destroy(other.gameObject);
+            GetComponent<SpriteRenderer>().color = Color.yellow;
+            StartCoroutine(Turnback());
+            PlayerAtack.critRate += incCrit;
+            UIManager.takeCriticalPowerUp(this.gameObject);
+
         }
     }
+
 
     private IEnumerator Turnback()
     {

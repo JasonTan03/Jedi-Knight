@@ -6,6 +6,7 @@ public class PlayerAtack : MonoBehaviour
 {
 
     public Animator animator;
+    public UImanager UImanager;
 
     public float attackRange = 0.5f;
     public float attackPower;
@@ -72,7 +73,8 @@ public class PlayerAtack : MonoBehaviour
                 enemy.GetComponent<Monster>().TakeDamage((int)(attackPower + sword.AttackPower));
                 Debug.Log("hit");
             }
-                
+            UImanager.DamageEnemy(gameObject, attackPower);
+            
         }
     }
     void HeavyAttack()
