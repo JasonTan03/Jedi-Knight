@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Color original;
+    private GameObject health;
     // Start is called before the first frame update
     void Start()
     {
         original = GetComponent<SpriteRenderer>().color;
+        
     }
 
     // Update is called once per frame
@@ -19,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("PowerUp"))
+        if(other.CompareTag("PowerUpHealth"))
         {
             Destroy(other.gameObject);
             GetComponent<SpriteRenderer>().color = Color.red;
