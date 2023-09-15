@@ -6,6 +6,7 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
     // Start is called before the first frame update
+    public ParticleSystem dust;
     //movement
     public PlayerDeath playerDeath;
     public float movementSpeed;
@@ -63,6 +64,7 @@ public class playerMovement : MonoBehaviour
         if (((Input.GetKeyDown(KeyCode.Space) == true)|| (Input.GetKeyDown(KeyCode.W) == true)) && isalive == true && !isJumping)
         {
             audioManager.playSFX(audioManager.jump);
+            CreateDust();
             animator.SetBool("IsJumping", true);
             player.velocity = Vector2.up * jumpPower;
             isJumping = true;
@@ -101,6 +103,7 @@ public class playerMovement : MonoBehaviour
             Vector3 localScale = transform.localScale;
             localScale.x *= -1f;
             transform.localScale = localScale;
+            CreateDust();
         }
     }
 
@@ -118,5 +121,10 @@ public class playerMovement : MonoBehaviour
         isDashing = false;
         yield return new WaitForSeconds(dashCD);
         canDash = true;
+    }
+
+    void CreateDust()
+    {
+        dust.Play();
     }
 }
