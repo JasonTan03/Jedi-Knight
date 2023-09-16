@@ -7,8 +7,7 @@ public class NPC : MonoBehaviour
 {
     public AudioManager audioManager;
     public GameObject player;
-    public GameObject left;
-    public GameObject right;
+    public GameObject tapToInteract;
     public GameObject dialoguePanel;
     public Text dialogueText;
     public string[] dialogue;
@@ -20,13 +19,16 @@ public class NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E) && playerIsClose)
+      
+
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
         {
             audioManager.playSFX(audioManager.pressButton);
 
             if (dialoguePanel.activeInHierarchy)
             {
                 zeroText();
+                
             }
             else
             {
@@ -89,34 +91,19 @@ public class NPC : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            if (player.transform.localScale.x > 0)
+          if(dialoguePanel.activeInHierarchy)
             {
-                if(dialoguePanel.activeInHierarchy == true)
-                {
-                    right.SetActive(false);
-                    left.SetActive(false);
-                }
-                else
-                {
-                    left.SetActive(false);
-                    right.SetActive(true);
-                }
+                tapToInteract.SetActive(false);
             }
+
             else
             {
-                if (dialoguePanel.activeInHierarchy == true)
-                {
-                    left.SetActive(false);
-                    right.SetActive(false);
-                }
-                else
-                {
-                    right.SetActive(false);
-                    left.SetActive(true);
-                }
+                tapToInteract.SetActive(true);
+            }
+
                
 
-            }
+            
         }
         
     }
@@ -125,8 +112,7 @@ public class NPC : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = false ;
-            left.SetActive(false);
-            right.SetActive(false);
+            tapToInteract.SetActive(false);
         }
     }
 }

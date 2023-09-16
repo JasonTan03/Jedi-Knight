@@ -28,7 +28,7 @@ public class UImanager : MonoBehaviour
     {
         Debug.Log(character.transform.position);
         Vector3 spawnposition = Camera.main.WorldToScreenPoint(character.transform.position);
-
+        spawnposition.x += 40f;
         Instantiate(increaseHealth, spawnposition, Quaternion.identity, gameCanvas.transform);
 
     }
@@ -37,7 +37,7 @@ public class UImanager : MonoBehaviour
     {
         Debug.Log(character.transform.position);
         Vector3 spawnposition = Camera.main.WorldToScreenPoint(character.transform.position);
-
+        spawnposition.x += 40f;
         Instantiate(increaseDamage, spawnposition, Quaternion.identity, gameCanvas.transform);
 
     }
@@ -46,7 +46,7 @@ public class UImanager : MonoBehaviour
     {
         Debug.Log(character.transform.position);
         Vector3 spawnposition = Camera.main.WorldToScreenPoint(character.transform.position);
-
+        spawnposition.x += 40f;
         Instantiate(increaseCritical, spawnposition, Quaternion.identity, gameCanvas.transform);
 
     }
@@ -55,7 +55,6 @@ public class UImanager : MonoBehaviour
     {
         Debug.Log(character.transform.position);
         Vector3 spawnposition = Camera.main.WorldToScreenPoint(character.transform.position);
-
         TMP_Text tmpText= Instantiate(damageText, spawnposition, Quaternion.identity, gameCanvas.transform).GetComponent<TMP_Text>();
         tmpText.text = attack.ToString();
     }
@@ -85,6 +84,20 @@ public class UImanager : MonoBehaviour
         TMP_Text tmpText= Instantiate(increaseHealth, spawnposition, Quaternion.identity, gameCanvas.transform).GetComponent<TMP_Text>();
         tmpText.text ="+"+ heal.ToString();
         tmpText.fontSize += 30;
+    }
+
+    public void EnterHover()
+    {
+
+        this.gameObject.GetComponent<RectTransform>().localScale = new Vector3(1.2f, 1.2f, 0);
+
+    }
+
+    public void ExitHover()
+    {
+
+        this.gameObject.GetComponent<RectTransform>().localScale = new Vector3(1f, 1f, 0);
+
     }
 
 }
