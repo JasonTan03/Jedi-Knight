@@ -1675,6 +1675,7 @@ GameObject:
   - component: {fileID: 344529775}
   - component: {fileID: 344529774}
   - component: {fileID: 344529773}
+  - component: {fileID: 344529777}
   m_Layer: 0
   m_Name: Bob
   m_TagString: Untagged
@@ -1782,7 +1783,7 @@ SpriteRenderer:
   m_SortingLayerID: -941856561
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 462695062, guid: 4c19680c44c0a8046b621ea8b0714168, type: 3}
+  m_Sprite: {fileID: 1769841734, guid: 987e6e6a80659c949b6d93ee47005ef9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1801,14 +1802,35 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344529772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.28, y: -7.38, z: 0.6129011}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 9.01, y: -6.4436, z: 0.6129011}
+  m_LocalScale: {x: 1, y: 1.0619072, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2010171342}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &344529777
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344529772}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a95490e217222594e84417f9e17124ec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &350612880
 GameObject:
   m_ObjectHideFlags: 0
@@ -9085,6 +9107,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc50e9c628ddb074bb53c10fcb58829b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackDamage: 20
+  enragedAttackDamage: 40
+  attackOffset: {x: 0, y: 0, z: 0}
+  attackRange: 1
+  attackMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1632847035
 GameObject:
   m_ObjectHideFlags: 0
@@ -25070,7 +25099,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -7.5366955, y: 1.977953}
+  m_AnchoredPosition: {x: -7.5366955, y: 0.04}
   m_SizeDelta: {x: 42.6149, y: 17.8132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2010171343
