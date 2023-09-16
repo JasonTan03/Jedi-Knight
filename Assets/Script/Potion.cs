@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class Potion : MonoBehaviour
 {
+    public ParticleSystem heal;
+    public UImanager UImanager;
+    public AudioManager audioManager;
     public HeatlhBar health;
     public playerMovement player;
     public Text potionCount;
@@ -28,8 +31,13 @@ public class Potion : MonoBehaviour
     }
     public void Heal()
     {
+        
         if (numpotion != 0 && health.hp != health.maxhp)
         {
+            heal.Play();
+            UImanager.heal(player.gameObject, health.regenerate);
+            audioManager.playSFX(audioManager.heal);
+            
             numpotion -= 1;
             health.hp += health.regenerate;
             if (health.hp >= health.maxhp)

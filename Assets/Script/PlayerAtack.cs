@@ -68,7 +68,7 @@ public class PlayerAtack : MonoBehaviour
                 audioManager.playSFX(audioManager.c_hit);
                 int finalattack = (int)(attackPower + sword.AttackPower) * 2;
                 enemy.GetComponent<Monster>().TakeDamage(finalattack);
-                UImanager.DamageEnemy(gameObject, finalattack);
+                UImanager.CriticalDamageEnemy(gameObject, finalattack);
                 hitEnemy = true;
                 Debug.Log("Critical hit");
             }
@@ -103,7 +103,7 @@ public class PlayerAtack : MonoBehaviour
                 int finalattack = (int)(((attackPower + sword.AttackPower) * 1.5) * 2);
                 audioManager.playSFX(audioManager.c_hit);
                 enemy.GetComponent<Monster>().TakeDamage(finalattack);
-                UImanager.DamageEnemy(gameObject, finalattack);
+                UImanager.CriticalDamageEnemy(gameObject, finalattack);
                 hitEnemy = true;
                 Debug.Log("Critical hit");
             }

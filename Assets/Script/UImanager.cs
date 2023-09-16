@@ -9,6 +9,8 @@ public class UImanager : MonoBehaviour
     public GameObject increaseDamage;
     public GameObject increaseCritical;
     public GameObject damageText;
+    public GameObject critText;
+    public GameObject monsterDamageText;
     public Canvas gameCanvas;
     // Start is called before the first frame update
 
@@ -57,4 +59,32 @@ public class UImanager : MonoBehaviour
         TMP_Text tmpText= Instantiate(damageText, spawnposition, Quaternion.identity, gameCanvas.transform).GetComponent<TMP_Text>();
         tmpText.text = attack.ToString();
     }
+
+    public void CriticalDamageEnemy(GameObject character, float attack)
+    {
+        Debug.Log(character.transform.position);
+        Vector3 spawnposition = Camera.main.WorldToScreenPoint(character.transform.position);
+        TMP_Text tmpText = Instantiate(critText, spawnposition, Quaternion.identity, gameCanvas.transform).GetComponent<TMP_Text>();
+        tmpText.text = attack.ToString();
+    }
+
+    public void MonsterDamage(GameObject character, float attack)
+    {
+        Debug.Log(character.transform.position);
+        Vector3 spawnposition = Camera.main.WorldToScreenPoint(character.transform.position);
+        spawnposition.y += 100;
+        TMP_Text tmpText = Instantiate(monsterDamageText, spawnposition, Quaternion.identity, gameCanvas.transform).GetComponent<TMP_Text>();
+        tmpText.text = attack.ToString();
+    }
+
+    public void heal(GameObject character,float heal)
+    {
+        Debug.Log(character.transform.position);
+        Vector3 spawnposition = Camera.main.WorldToScreenPoint(character.transform.position);
+
+        TMP_Text tmpText= Instantiate(increaseHealth, spawnposition, Quaternion.identity, gameCanvas.transform).GetComponent<TMP_Text>();
+        tmpText.text ="+"+ heal.ToString();
+        tmpText.fontSize += 30;
+    }
+
 }

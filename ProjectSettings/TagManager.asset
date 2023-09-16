@@ -23,7 +23,7 @@ TagManager:
   - UI
   - test
   - Monster
-  - 
+  - powerUp
   - 
   - 
   - 
@@ -65,4 +65,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3009738775
+    locked: 0
+  - name: PowerUp
+    uniqueID: 2452133747
     locked: 0

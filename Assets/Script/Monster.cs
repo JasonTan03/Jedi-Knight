@@ -18,7 +18,7 @@ public class Monster : MonoBehaviour
 
     public Transform player;
     public bool isFlipped = false;
-
+    public UImanager UImanager;
 
     // Start is called before the first frame update
     void Start()
@@ -84,6 +84,7 @@ public class Monster : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            UImanager.MonsterDamage(gameObject, damage);
             playerHealth.DecreaseHP(damage);
             tempSpeed1 = mon1.moveSpeed;
             tempSpeed2 = mon2.speed;

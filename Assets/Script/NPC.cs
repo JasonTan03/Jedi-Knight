@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class NPC : MonoBehaviour
 {
+    public AudioManager audioManager;
     public GameObject player;
     public GameObject left;
     public GameObject right;
@@ -21,6 +22,8 @@ public class NPC : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E) && playerIsClose)
         {
+            audioManager.playSFX(audioManager.pressButton);
+
             if (dialoguePanel.activeInHierarchy)
             {
                 zeroText();
@@ -88,13 +91,30 @@ public class NPC : MonoBehaviour
         {
             if (player.transform.localScale.x > 0)
             {
-                left.SetActive(false);
-                right.SetActive(true);
+                if(dialoguePanel.activeInHierarchy == true)
+                {
+                    right.SetActive(false);
+                    left.SetActive(false);
+                }
+                else
+                {
+                    left.SetActive(false);
+                    right.SetActive(true);
+                }
             }
             else
             {
-                right.SetActive(false);
-                left.SetActive(true);
+                if (dialoguePanel.activeInHierarchy == true)
+                {
+                    left.SetActive(false);
+                    right.SetActive(false);
+                }
+                else
+                {
+                    right.SetActive(false);
+                    left.SetActive(true);
+                }
+               
 
             }
         }

@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip hit;
     public AudioClip c_hit;
     public AudioClip heal;
+    public AudioClip pressButton;
 
     public void Start()
     {
