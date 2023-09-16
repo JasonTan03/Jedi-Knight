@@ -86,17 +86,7 @@ public class Monster : MonoBehaviour
         {
             UImanager.MonsterDamage(gameObject, damage);
             playerHealth.DecreaseHP(damage);
-            tempSpeed1 = mon1.moveSpeed;
-            tempSpeed2 = mon2.speed;
-            mon1.moveSpeed = 0;
-            mon2.speed = 0;
-
         }
-    }
-    void OnCollisionExit2D(Collision2D other)
-    {
-        mon1.moveSpeed = tempSpeed1;
-        mon2.speed = tempSpeed2;
     }
 
     public void LookAtPlayer()

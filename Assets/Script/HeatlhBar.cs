@@ -10,7 +10,6 @@ public class HeatlhBar : MonoBehaviour
     public Slider hpBar;
     public float decrease;
     public float regenerate;
-    public float damage;
     public Animator animator;
 
     // Start is called before the first frame update
@@ -25,7 +24,6 @@ public class HeatlhBar : MonoBehaviour
     {
         hpBar.value = hp;
     }
-
 
     public void DecreaseHP(float damage)
     { 

@@ -7,6 +7,7 @@ public class ChasePlayer : MonoBehaviour
     public Transform target;
     public float moveSpeed;
     public Animator animator;
+    float tempSpeed;
     void Update()
     {
         followTarget();
@@ -28,6 +29,17 @@ public class ChasePlayer : MonoBehaviour
             transform.Translate(new Vector3(distance.x, 0, 0) * moveSpeed * Time.deltaTime);
         }
     }
-
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            tempSpeed = moveSpeed;
+            moveSpeed = 0;
+        }
+    }
+    void OnCollisionExit2D(Collision2D other)
+    {
+        moveSpeed = tempSpeed;
+    }
 
 }

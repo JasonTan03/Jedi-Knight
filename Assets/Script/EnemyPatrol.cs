@@ -9,6 +9,7 @@ public class EnemyPatrol : MonoBehaviour
     private Rigidbody2D rb;
     private Transform currentPoint; 
     public float speed;
+    float tempSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,5 +58,18 @@ public class EnemyPatrol : MonoBehaviour
         Gizmos.DrawWireSphere(pointA.transform.position, 0.5f);
         Gizmos.DrawWireSphere(pointB.transform.position, 0.5f);
         Gizmos.DrawLine(pointA.transform.position, pointB.transform.position);
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            tempSpeed = speed;
+            speed = 0;
+        }
+    }
+    void OnCollisionExit2D(Collision2D other)
+    {
+        speed = tempSpeed;
     }
 }
