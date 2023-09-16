@@ -27,7 +27,7 @@ public class NPC : MonoBehaviour
             }
             else
             {
-                dialoguePanel.SetActive(true);
+                dialoguePanel.SetActive(true); 
                 StartCoroutine(typing());
             }
         }

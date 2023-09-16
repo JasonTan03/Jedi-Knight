@@ -8,6 +8,7 @@ public class PlayerAtack : MonoBehaviour
     public Animator animator;
     public UImanager UImanager;
 
+    bool hitEnemy = false;
     public float attackRange = 0.5f;
     public float attackPower;
     public float attackRate = 2f;
@@ -57,7 +58,6 @@ public class PlayerAtack : MonoBehaviour
 
     void LightAttack()
     {
-        audioManager.playSFX(audioManager.attack);
         animator.SetTrigger("LightAttack");
         Collider2D[] hit = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         Debug.Log("Light Attack");
@@ -65,17 +65,30 @@ public class PlayerAtack : MonoBehaviour
         {
             if (Random.Range(1,10) <= critRate)
             {
-                enemy.GetComponent<Monster>().TakeDamage((int)((attackPower + sword.AttackPower)*2));
+                audioManager.playSFX(audioManager.c_hit);
+                int finalattack = (int)(attackPower + sword.AttackPower) * 2;
+                enemy.GetComponent<Monster>().TakeDamage(finalattack);
+                UImanager.DamageEnemy(gameObject, finalattack);
+                hitEnemy = true;
                 Debug.Log("Critical hit");
             }
             else
             {
-                enemy.GetComponent<Monster>().TakeDamage((int)(attackPower + sword.AttackPower));
+                audioManager.playSFX(audioManager.hit);
+                int finalattack = (int)(attackPower + sword.AttackPower);
+                enemy.GetComponent<Monster>().TakeDamage(finalattack);
+                UImanager.DamageEnemy(gameObject, finalattack);
+                hitEnemy = true;
                 Debug.Log("hit");
             }
-            UImanager.DamageEnemy(gameObject, attackPower);
+            
             
         }
+        if (hitEnemy == false)
+        {
+            audioManager.playSFX(audioManager.attack);
+        }
+        hitEnemy = false;
     }
     void HeavyAttack()
     {
@@ -87,16 +100,29 @@ public class PlayerAtack : MonoBehaviour
         {
             if (Random.Range(1, 10) <= critRate)
             {
-                enemy.GetComponent<Monster>().TakeDamage((int)(((attackPower + sword.AttackPower) * 1.5)*2));
+                int finalattack = (int)(((attackPower + sword.AttackPower) * 1.5) * 2);
+                audioManager.playSFX(audioManager.c_hit);
+                enemy.GetComponent<Monster>().TakeDamage(finalattack);
+                UImanager.DamageEnemy(gameObject, finalattack);
+                hitEnemy = true;
                 Debug.Log("Critical hit");
             }
             else
             {
-                enemy.GetComponent<Monster>().TakeDamage((int)((attackPower + sword.AttackPower) * 1.5));
+                int finalattack = (int)((attackPower + sword.AttackPower) * 1.5);
+                audioManager.playSFX(audioManager.hit);
+                enemy.GetComponent<Monster>().TakeDamage(finalattack);
+                UImanager.DamageEnemy(gameObject, finalattack);
+                hitEnemy = true;
                 Debug.Log("hit");
             }
 
         }
+        if (hitEnemy == false)
+        {
+            audioManager.playSFX(audioManager.attack);
+        }
+        hitEnemy = false;
     }
 
     private void OnDrawGizmosSelected()

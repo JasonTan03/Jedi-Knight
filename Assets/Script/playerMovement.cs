@@ -91,8 +91,10 @@ public class playerMovement : MonoBehaviour
     {
         if (ground.gameObject.CompareTag("ground"))
         {
+            CreateDust();
             isJumping = false;
             animator.SetBool("IsJumping",false);
+            
         }
     }
     private void Flip()
@@ -103,7 +105,12 @@ public class playerMovement : MonoBehaviour
             Vector3 localScale = transform.localScale;
             localScale.x *= -1f;
             transform.localScale = localScale;
-            CreateDust();
+
+            if(isJumping==false)
+            {
+                CreateDust();
+            }
+            
         }
     }
 
@@ -127,4 +134,6 @@ public class playerMovement : MonoBehaviour
     {
         dust.Play();
     }
+
+   
 }
