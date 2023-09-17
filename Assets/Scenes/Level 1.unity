@@ -7755,6 +7755,11 @@ MonoBehaviour:
   critText: {fileID: 768472820630840416, guid: 6337dd21442753046ad1424bb2097a39, type: 3}
   monsterDamageText: {fileID: 3603727296898610148, guid: c10b44b5f761df045b1ab5901ed4aa68, type: 3}
   gameCanvas: {fileID: 1874686496}
+--- !u!1 &972838446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4405742222903118171, guid: 9cf2a2b8d75e8c0419ff60f845186f76, type: 3}
+  m_PrefabInstance: {fileID: 2583036933948565744}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &994983882
 GameObject:
   m_ObjectHideFlags: 0
@@ -8082,6 +8087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Minion (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5099177870312575728, guid: d3cc36e4ef7a35b45bf740e21e4c66b1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5192011874514281600, guid: d3cc36e4ef7a35b45bf740e21e4c66b1, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -8098,6 +8107,10 @@ PrefabInstance:
       propertyPath: UImanager
       value: 
       objectReference: {fileID: 943257130}
+    - target: {fileID: 5685430087662904347, guid: d3cc36e4ef7a35b45bf740e21e4c66b1, type: 3}
+      propertyPath: bossBlood
+      value: 
+      objectReference: {fileID: 9098842046369538026, guid: c2340894f68521b478f6ab9fd19bc33a, type: 3}
     - target: {fileID: 5936254212913624400, guid: d3cc36e4ef7a35b45bf740e21e4c66b1, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -9073,6 +9086,10 @@ PrefabInstance:
     - target: {fileID: 2816771229964786855, guid: 18c6bbc902305fd4aa13299378adcecb, type: 3}
       propertyPath: m_Name
       value: Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 2816771229964786855, guid: 18c6bbc902305fd4aa13299378adcecb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3893625347919003286, guid: 18c6bbc902305fd4aa13299378adcecb, type: 3}
       propertyPath: m_Enabled
@@ -25163,7 +25180,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: -1285228521
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!1 &2039042672
 GameObject:
@@ -25509,7 +25526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2643231314042612538, guid: 9cf2a2b8d75e8c0419ff60f845186f76, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.18
+      value: -2.43
       objectReference: {fileID: 0}
     - target: {fileID: 2643231314042612538, guid: 9cf2a2b8d75e8c0419ff60f845186f76, type: 3}
       propertyPath: m_LocalPosition.z
@@ -25612,6 +25629,10 @@ PrefabInstance:
       propertyPath: UImanager
       value: 
       objectReference: {fileID: 943257130}
+    - target: {fileID: 5685430087662904347, guid: d3cc36e4ef7a35b45bf740e21e4c66b1, type: 3}
+      propertyPath: bossBlood
+      value: 
+      objectReference: {fileID: 9098842046369538026, guid: c2340894f68521b478f6ab9fd19bc33a, type: 3}
     - target: {fileID: 5936254212913624400, guid: d3cc36e4ef7a35b45bf740e21e4c66b1, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -25677,6 +25698,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2042212386}
     m_Modifications:
+    - target: {fileID: 1626602795188583757, guid: d870125c801be6340b733c3c7424acd2, type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7430661293618882722, guid: d870125c801be6340b733c3c7424acd2, type: 3}
       propertyPath: m_Name
       value: PowerUpCritical
@@ -26231,6 +26256,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2664515292066821946, guid: 67ce6b66639c9a74da20799a402094e1, type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5597761606976060285, guid: 67ce6b66639c9a74da20799a402094e1, type: 3}
       propertyPath: m_Name
       value: PowerUpAttack
@@ -26261,9 +26290,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1457331699}
     - target: {fileID: 3559880800963955392, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
+      propertyPath: blood
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559880800963955392, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
       propertyPath: delay
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 3559880800963955392, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559880800963955392, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
+      propertyPath: bossBlood
+      value: 
+      objectReference: {fileID: 9098842046369538026, guid: c2340894f68521b478f6ab9fd19bc33a, type: 3}
+    - target: {fileID: 3559880800963955392, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
+      propertyPath: item.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559880800963955392, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
+      propertyPath: item.Array.data[0]
+      value: 
+      objectReference: {fileID: 972838446}
+    - target: {fileID: 3559880800963955392, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
+      propertyPath: dropItem.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559880800963955392, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
+      propertyPath: dropItem.Array.data[0]
+      value: 
+      objectReference: {fileID: 972838446}
     - target: {fileID: 4920270617626741256, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -26326,7 +26383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9098060196761275809, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

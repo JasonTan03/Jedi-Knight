@@ -1,10 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Monster : MonoBehaviour
 {
-    
+    public ParticleSystem bossBlood;
+    private int startTime=0;
+    private int endTime=2;
+    public GameObject[] item;
     public float health = 100;
     public float damage;
     HeatlhBar playerHealth;
@@ -43,6 +49,8 @@ public class Monster : MonoBehaviour
         health -= attackPower;
         if (health <= 0)
         {
+            Instantiate(bossBlood,transform.position, Quaternion.identity);
+            DropItem();
             monsterDead();
         }
     }
@@ -105,6 +113,14 @@ public class Monster : MonoBehaviour
             transform.localScale = flipped;
             transform.Rotate(0f, 180f, 0f);
             isFlipped = true;
+        }
+    }
+
+    public void DropItem()
+    {
+        for (int i=0;i<item.Length;i++)
+        {
+            Instantiate(item[i],transform.position + new Vector3(0,1,0),quaternion.identity );
         }
     }
 
