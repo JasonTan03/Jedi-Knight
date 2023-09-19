@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("PowerUpHealth"))
         {
             Destroy(other.gameObject);
-            GetComponentInChildren<HeatlhBar>().maxhp += incHealth;
+            HeatlhBar.maxhp += incHealth;
             UIManager.takeHealthPowerUp(this.gameObject);
 
         }
@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("PowerUpAttack"))
         {
             Destroy(other.gameObject);
-            GetComponent<PlayerAtack>().attackPower += incAttack;
+            PlayerAtack.attackPower+= incAttack;
             UIManager.takeDamagePowerUp(this.gameObject);
         }
 

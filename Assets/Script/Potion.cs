@@ -11,13 +11,12 @@ public class Potion : MonoBehaviour
     public HeatlhBar health;
     public playerMovement player;
     public Text potionCount;
-    public int numpotion;
+    public static int numpotion=5;
     // Start is called before the first frame update
     void Start()
     {
         health = GameObject.FindGameObjectWithTag("Health").GetComponent<HeatlhBar>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerMovement>();
-        numpotion = 5;
     }
 
     // Update is called once per frame
@@ -32,16 +31,16 @@ public class Potion : MonoBehaviour
     public void Heal()
     {
         
-        if (numpotion != 0 && health.hp != health.maxhp)
+        if (numpotion != 0 && HeatlhBar.hp != HeatlhBar.maxhp)
         {
             heal.Play();
             UImanager.heal(player.gameObject, health.regenerate);
             audioManager.playSFX(audioManager.heal);
             
             numpotion -= 1;
-            health.hp += health.regenerate;
-            if (health.hp >= health.maxhp)
-                health.hp = health.maxhp;
+            HeatlhBar.hp += health.regenerate;
+            if (HeatlhBar.hp >= HeatlhBar.maxhp)
+                HeatlhBar.hp = HeatlhBar.maxhp;
         }
     }
 }

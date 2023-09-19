@@ -39,7 +39,7 @@ public class playerMovement : MonoBehaviour
 
     void Start()
     {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>(); 
         enegry = GameObject.FindGameObjectWithTag("Stamina").GetComponent<staminabar>();
         health = GameObject.FindGameObjectWithTag("Health").GetComponent<HeatlhBar>();
     }
@@ -78,7 +78,7 @@ public class playerMovement : MonoBehaviour
             StartCoroutine(Dash());
         }
 
-        if (health.hp == 0)
+        if (HeatlhBar.hp == 0)
         {
             animator.SetBool("Death",true);
             isalive = false;

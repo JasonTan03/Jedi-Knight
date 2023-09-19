@@ -10,7 +10,7 @@ public class PlayerAtack : MonoBehaviour
 
     bool hitEnemy = false;
     public float attackRange = 0.5f;
-    public float attackPower;
+    public static float attackPower=10;
     public float attackRate = 2f;
     float nextAttackTime = 0f;
     public static int critRate = 2;

@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class HeatlhBar : MonoBehaviour
 {
-    public float hp;
-    public float maxhp;
+    public static float hp = 100;
+    public static float maxhp = 100;
     public Slider hpBar;
     public float decrease;
     public float regenerate;
@@ -15,14 +15,14 @@ public class HeatlhBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        maxhp = hp;
-        hpBar.maxValue = maxhp;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         hpBar.value = hp;
+        hpBar.maxValue = maxhp;
     }
 
     public void DecreaseHP(float damage)
