@@ -49,6 +49,7 @@ public class Monster : MonoBehaviour
         health -= attackPower;
         if (health <= 0)
         {
+            health = 0;
             Instantiate(bossBlood,transform.position, Quaternion.identity);
             DropItem();
             monsterDead();

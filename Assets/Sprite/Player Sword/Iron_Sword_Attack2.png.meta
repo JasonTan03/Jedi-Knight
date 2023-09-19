@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ecd5fa392fcc30446acf05fb1801299e
+guid: 858a8a3d6fa1b8f4d90f5644c0c34931
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Iron_Sword_Attack_0
+      name: Iron_Sword_Attack2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad2d3f18d57c3fd40943157638444bda
-      internalID: 1533690612
+      spriteID: 7716946209794454c959f1e31b62770c
+      internalID: -2139098282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Iron_Sword_Attack_1
+      name: Iron_Sword_Attack2_1
       rect:
         serializedVersion: 2
         x: 120
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70df5f3aca224e448801e376ad8536ac
-      internalID: 707022205
+      spriteID: 3001059b5e422d744aa310d145c76e45
+      internalID: -2023671374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Iron_Sword_Attack_2
+      name: Iron_Sword_Attack2_2
       rect:
         serializedVersion: 2
         x: 240
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36d1af95ad78c9a449b647287306ec1b
-      internalID: 829533822
+      spriteID: d4688aa8505436d4981d7b62d1744df1
+      internalID: -1439416596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Iron_Sword_Attack_3
+      name: Iron_Sword_Attack2_3
       rect:
         serializedVersion: 2
         x: 360
@@ -200,8 +200,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b089d3ffa0e2dac4d8d8cfe8ce1dcd24
-      internalID: 1992337712
+      spriteID: dea4315653ef38a47bef4e86d74dda09
+      internalID: -783775998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iron_Sword_Attack2_4
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 120
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8ab1ae4feb4bf4586d3207f786edd5
+      internalID: 763700669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iron_Sword_Attack2_5
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 120
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4917b6348d259b84b9f8ddad2917bcf5
+      internalID: -871062567
       vertices: []
       indices: 
       edges: []
@@ -217,10 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Iron_Sword_Attack_0: 1533690612
-      Iron_Sword_Attack_1: 707022205
-      Iron_Sword_Attack_2: 829533822
-      Iron_Sword_Attack_3: 1992337712
+      Iron_Sword_Attack2_0: -2139098282
+      Iron_Sword_Attack2_1: -2023671374
+      Iron_Sword_Attack2_2: -1439416596
+      Iron_Sword_Attack2_3: -783775998
+      Iron_Sword_Attack2_4: 763700669
+      Iron_Sword_Attack2_5: -871062567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

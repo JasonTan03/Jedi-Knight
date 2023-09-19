@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ecd5fa392fcc30446acf05fb1801299e
+guid: 4e79d86d3a3d7d94f9d11a199b3676b1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,24 +106,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Iron_Sword_Attack_0
+      name: WoodSwordAttack_Light_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad2d3f18d57c3fd40943157638444bda
-      internalID: 1533690612
+      spriteID: 4256a9d409d036e478d75e8f1b338c35
+      internalID: -350478234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Iron_Sword_Attack_1
+      name: WoodSwordAttack_Light_1
       rect:
         serializedVersion: 2
         x: 120
@@ -158,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70df5f3aca224e448801e376ad8536ac
-      internalID: 707022205
+      spriteID: 31a45b8a75243c04196021f79b3b0b11
+      internalID: 845722692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Iron_Sword_Attack_2
+      name: WoodSwordAttack_Light_2
       rect:
         serializedVersion: 2
         x: 240
@@ -179,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36d1af95ad78c9a449b647287306ec1b
-      internalID: 829533822
+      spriteID: 41b3d8c83dfd8124385cdd7eb1ddf539
+      internalID: 79816659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Iron_Sword_Attack_3
+      name: WoodSwordAttack_Light_3
       rect:
         serializedVersion: 2
         x: 360
@@ -200,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b089d3ffa0e2dac4d8d8cfe8ce1dcd24
-      internalID: 1992337712
+      spriteID: fdcdfd988830cc44c8964b2def770be3
+      internalID: -1560339959
       vertices: []
       indices: 
       edges: []
@@ -217,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Iron_Sword_Attack_0: 1533690612
-      Iron_Sword_Attack_1: 707022205
-      Iron_Sword_Attack_2: 829533822
-      Iron_Sword_Attack_3: 1992337712
+      WoodSwordAttack_Light_0: -350478234
+      WoodSwordAttack_Light_1: 845722692
+      WoodSwordAttack_Light_2: 79816659
+      WoodSwordAttack_Light_3: -1560339959
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

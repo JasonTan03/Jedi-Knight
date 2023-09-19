@@ -31,19 +31,6 @@ public class Monster_weapon : MonoBehaviour
 		}
 	}
 
-	public void EnragedAttack()
-	{
-		Vector3 pos = transform.position;
-		pos += transform.right * attackOffset.x;
-		pos += transform.up * attackOffset.y;
-
-		Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
-		if (colInfo != null)
-		{
-			colInfo.GetComponent<HeatlhBar>().DecreaseHP(enragedAttackDamage);
-		}
-	}
-
 	void OnDrawGizmosSelected()
 	{
 		Vector3 pos = transform.position;

@@ -8,6 +8,7 @@ public class Monster_Run : StateMachineBehaviour
 	public float speed = 2.5f;
 	public float attackRange = 3f;
 	float nextAttackTime = 1f;
+	float tempSpeed;
 	public float attackRate = 1f;
 
 	Transform player;
@@ -20,7 +21,6 @@ public class Monster_Run : StateMachineBehaviour
 		player = GameObject.FindGameObjectWithTag("Player").transform;
 		rb = animator.GetComponent<Rigidbody2D>();
 		monster = animator.GetComponent<Monster>();
-
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -47,5 +47,18 @@ public class Monster_Run : StateMachineBehaviour
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
 	{
 		animator.ResetTrigger("Attack");
+	}
+
+	public void OnCollisionEnter2D(Collision2D other)
+	{
+        if (other.gameObject.CompareTag("Player"))
+		{
+			tempSpeed = speed;
+			speed = 0;
+		}
+	}
+	public void OnCollisionExit2D(Collision2D other)
+	{
+		speed = tempSpeed;
 	}
 }

@@ -5,6 +5,8 @@ using UnityEngine;
 public class ChasePlayer : MonoBehaviour
 {
     public Transform target;
+    public GameObject player;
+    public bool flip;
     public float moveSpeed;
     public Animator animator;
     float tempSpeed;
@@ -12,18 +14,24 @@ public class ChasePlayer : MonoBehaviour
     {
         followTarget();
     }
-    private void flip()
+    private void lookPlayer()
     {
-        Vector3 localScale = transform.localScale;
-        localScale.x *= -1;
-        transform.localScale = localScale;
+        Vector3 scale = transform.localScale;
+        if (player.transform.position.x > transform.position.x)
+        {
+            scale.x = Mathf.Abs(scale.x) * -1 * (flip ? -1 : 1);
+        }
+        else
+        {
+            scale.x = Mathf.Abs(scale.x) * (flip ? -1 : 1);
+        }
     }
 
     private void followTarget()
     {
         if(target != null)
         {
-            //flip();
+            //lookPlayer();
             Vector2 distance = target.position - transform.position;
 
             transform.Translate(new Vector3(distance.x, 0, 0) * moveSpeed * Time.deltaTime);

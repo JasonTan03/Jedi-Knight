@@ -36,13 +36,15 @@ public class EnemyPatrol : MonoBehaviour
 
         if(Vector2.Distance(transform.position, currentPoint.position)< 0.5f&& currentPoint == pointB.transform)
         {
-            flip();
+            
             currentPoint = pointA.transform;
+            flip();
         }
         if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointA.transform)
         {
-            flip();
+            
             currentPoint = pointB.transform;
+            flip();
         }
     }
 
