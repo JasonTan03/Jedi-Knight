@@ -8,18 +8,12 @@ using UnityEngine.Rendering.Universal;
 public class Monster : MonoBehaviour
 {
     public ParticleSystem bossBlood;
-    private int startTime=0;
-    private int endTime=2;
     public GameObject[] item;
     public float health = 100;
     public float damage;
     HeatlhBar playerHealth;
-    ChasePlayer mon1;
-    EnemyPatrol mon2;
     public SpriteRenderer sr;
     public int delay = 1;
-    float tempSpeed1;
-    float tempSpeed2;
     public Animator anim;
 
     public Transform player;
@@ -30,9 +24,6 @@ public class Monster : MonoBehaviour
     void Start()
     {
         playerHealth = GameObject.FindGameObjectWithTag("Health").GetComponent<HeatlhBar>();
-        mon1 = GameObject.FindGameObjectWithTag("Monster").GetComponent<ChasePlayer>();
-        mon2 = GameObject.FindGameObjectWithTag("Monster").GetComponent<EnemyPatrol>();
-
     }
 
     // Update is called once per frame
@@ -49,10 +40,9 @@ public class Monster : MonoBehaviour
         health -= attackPower;
         if (health <= 0)
         {
-            health = 0;
             Instantiate(bossBlood,transform.position, Quaternion.identity);
             DropItem();
-            monsterDead();
+            StartCoroutine(monsterDead());
         }
     }
 
@@ -78,17 +68,13 @@ public class Monster : MonoBehaviour
         // restore origin color
         sr.color = originColor;
     }
-    void monsterDead()
+    IEnumerator monsterDead()
     {
-        anim.SetBool("IsDead",true);
-        Debug.Log("Die");
-        StartCoroutine(Wait());
+        anim.SetBool("IsDead", true);
+        yield return new WaitForSeconds(3);
         Destroy(gameObject);
     }
-    IEnumerator Wait()
-    {
-        yield return new WaitForSeconds(delay);
-    }
+    
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player"))
