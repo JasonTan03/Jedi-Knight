@@ -14,6 +14,9 @@ TagManager:
   - PowerUpHealth
   - PowerUpAttack
   - PowerUpCritical
+  - Boss
+  - NextLevel
+  - Mimic
   layers:
   - Default
   - TransparentFX

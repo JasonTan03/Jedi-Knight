@@ -40,6 +40,7 @@ public class Monster : MonoBehaviour
         health -= attackPower;
         if (health <= 0)
         {
+            health = 0;
             Instantiate(bossBlood,transform.position, Quaternion.identity);
             DropItem();
             StartCoroutine(monsterDead());
@@ -71,7 +72,7 @@ public class Monster : MonoBehaviour
     IEnumerator monsterDead()
     {
         anim.SetBool("IsDead", true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(0.8f);
         Destroy(gameObject);
     }
     
