@@ -18,6 +18,7 @@ TagManager:
   - NextLevel
   - Mimic
   - Death
+  - potion
   layers:
   - Default
   - TransparentFX

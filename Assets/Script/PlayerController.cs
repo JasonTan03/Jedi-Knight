@@ -44,6 +44,14 @@ public class PlayerController : MonoBehaviour
             UIManager.takeCriticalPowerUp(this.gameObject);
 
         }
+
+        if (other.gameObject.CompareTag("potion"))
+        {
+            Destroy(other.gameObject);
+            Potion.numpotion++;
+            UIManager.potion(this.gameObject    );
+
+        }
     }
 }
 

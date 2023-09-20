@@ -86,6 +86,16 @@ public class UImanager : MonoBehaviour
         tmpText.fontSize += 30;
     }
 
+    public void potion(GameObject character)
+    {
+        Debug.Log(character.transform.position);
+        Vector3 spawnposition = Camera.main.WorldToScreenPoint(character.transform.position);
+
+        TMP_Text tmpText = Instantiate(increaseHealth, spawnposition, Quaternion.identity, gameCanvas.transform).GetComponent<TMP_Text>();
+        tmpText.text = "Potion bottle";
+    }
+
+
     public void EnterHover()
     {
 
