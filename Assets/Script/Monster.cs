@@ -20,7 +20,6 @@ public class Monster : MonoBehaviour
     public Transform player;
     public bool isFlipped = false;
     public UImanager UImanager;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -113,5 +112,7 @@ public class Monster : MonoBehaviour
         }
 
     }
+
+
 
 }

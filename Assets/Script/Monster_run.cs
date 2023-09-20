@@ -49,16 +49,5 @@ public class Monster_Run : StateMachineBehaviour
 		animator.ResetTrigger("Attack");
 	}
 
-	public void OnCollisionEnter2D(Collision2D other)
-	{
-        if (other.gameObject.CompareTag("Player"))
-		{
-			tempSpeed = speed;
-			speed = 0;
-		}
-	}
-	public void OnCollisionExit2D(Collision2D other)
-	{
-		speed = tempSpeed;
-	}
+	
 }
