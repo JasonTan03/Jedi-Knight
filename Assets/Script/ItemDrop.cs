@@ -9,19 +9,29 @@ public class ItemDrop : MonoBehaviour
     private float endTime = 1.5f;
     private Rigidbody2D itemRB;
     public float dropForce=5;
+    int randomnum;
+    private bool touch=false;
     // Start is called before the first frame update
     void Start()
-    { 
+    {
+        randomnum = UnityEngine.Random.Range(-3, 3);
         itemRB = GetComponent<Rigidbody2D>();
         itemRB.AddForce(itemRB.mass*Vector2.up*dropForce,ForceMode2D.Impulse); 
     }
 
     void Update()
     {
-        if(startTime <endTime)
+        if(touch==false)
         {
-            startTime += Time.deltaTime;
-            itemRB.transform.position += new Vector3(UnityEngine.Random.Range(-3,3)*Time.deltaTime*speed, 0,0);
+            itemRB.transform.position += new Vector3(randomnum*Time.deltaTime*speed, 0,0);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag==("ground"))
+        {
+            touch = true;
         }
     }
 

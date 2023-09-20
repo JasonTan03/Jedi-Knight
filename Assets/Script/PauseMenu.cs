@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 { 
     public GameObject pauseMenu;
+    public PlayerDeath pd;
     public bool isPause = false;
 
 
@@ -42,6 +43,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Home()
     {
+        pd.resetPlayerValue();
         SceneManager.LoadScene("Main Menu");
         isPause = false;
         pauseMenu.SetActive(false);

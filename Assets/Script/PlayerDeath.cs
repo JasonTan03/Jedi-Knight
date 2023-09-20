@@ -22,8 +22,17 @@ public class PlayerDeath : MonoBehaviour
 
     public void Reset()
     {
+        resetPlayerValue();
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void resetPlayerValue()
+    {
+        PlayerAtack.attackPower = 10;
+        PlayerAtack.critRate = 2;
+        HeatlhBar.hp = 100;
+        HeatlhBar.maxhp = 100;
     }
 
 }

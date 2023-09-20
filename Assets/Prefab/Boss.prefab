@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 559200839807000121}
   - component: {fileID: 2080640115978247554}
   - component: {fileID: 3559880800963955392}
+  - component: {fileID: 7821345058745025899}
   m_Layer: 7
   m_Name: Boss
   m_TagString: Monster
@@ -36,7 +37,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5768449472248773841
 SpriteRenderer:
@@ -78,8 +79,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -344926151, guid: 99fe493a8a39d7248bd21d97667b5266, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: -344926151, guid: ea84963306a46634799b8169fe0bcc46, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -228,9 +229,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda02e9774f5178488285f7310d45c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 300
+  bossBlood: {fileID: 9098842046369538026, guid: c2340894f68521b478f6ab9fd19bc33a, type: 3}
+  item:
+  - {fileID: 4405742222903118171, guid: 9cf2a2b8d75e8c0419ff60f845186f76, type: 3}
+  - {fileID: 7430661293618882722, guid: d870125c801be6340b733c3c7424acd2, type: 3}
+  - {fileID: 5597761606976060285, guid: 67ce6b66639c9a74da20799a402094e1, type: 3}
+  numberOfDrop: 3
+  health: 100
   damage: 0
-  playerHealth: {fileID: 0}
-  mon1: {fileID: 0}
-  mon2: {fileID: 0}
-  sr: {fileID: 0}
+  sr: {fileID: 5768449472248773841}
+  delay: 10
+  anim: {fileID: 4952615766326915037}
+  player: {fileID: 0}
+  isFlipped: 0
+  UImanager: {fileID: 0}
+--- !u!114 &7821345058745025899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9098060196761275809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ea1fe366b077d4ba89d6c8d8a4cfc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  dropForce: 5

@@ -17,6 +17,7 @@ TagManager:
   - Boss
   - NextLevel
   - Mimic
+  - Death
   layers:
   - Default
   - TransparentFX
@@ -27,8 +28,8 @@ TagManager:
   - test
   - Monster
   - powerUp
-  - 
-  - 
+  - PowerUp2
+  - PowerUP3
   - 
   - 
   - 

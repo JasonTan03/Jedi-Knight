@@ -1,4 +1,4 @@
-using System;
+ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
@@ -9,6 +9,7 @@ public class Monster : MonoBehaviour
 {
     public ParticleSystem bossBlood;
     public GameObject[] item;
+    public int numberOfDrop;
     public float health = 100;
     public float damage;
     HeatlhBar playerHealth;
@@ -106,10 +107,11 @@ public class Monster : MonoBehaviour
 
     public void DropItem()
     {
-        for (int i=0;i<item.Length;i++)
+        for (int i=0;i<numberOfDrop;i++)
         {
-            Instantiate(item[i],transform.position + new Vector3(0,1,0),quaternion.identity );
+            Instantiate(item[UnityEngine.Random.Range(0,item.Length)],transform.position + new Vector3(0,3,0),quaternion.identity );
         }
+
     }
 
 }

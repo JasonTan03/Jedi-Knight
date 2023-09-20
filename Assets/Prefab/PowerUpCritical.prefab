@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 3883290070293100872}
   - component: {fileID: 4006862713792571596}
   - component: {fileID: 1626602795188583757}
-  m_Layer: 8
+  - component: {fileID: 6887649466700301204}
+  m_Layer: 9
   m_Name: PowerUpCritical
   m_TagString: PowerUpCritical
   m_Icon: {fileID: 0}
@@ -34,7 +35,7 @@ Transform:
   m_Children:
   - {fileID: 8915126178794945733}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3987076488419942065
 SpriteRenderer:
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1842833549
-  m_SortingLayer: 7
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -2080662710, guid: 428d13a5819a065498ea6be455781112, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -166,7 +167,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 20
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -180,7 +181,21 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &6887649466700301204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7430661293618882722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ea1fe366b077d4ba89d6c8d8a4cfc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  dropForce: 5
 --- !u!1 &8171106934627345476
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,7 +206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8915126178794945733}
   - component: {fileID: 3112038204897410276}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: PowerUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +248,7 @@ MonoBehaviour:
   m_Intensity: 5
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: cb07310495af8fb4cf68dcc7
+  m_ApplyToSortingLayers: cb07310495af8fb4cf68dcc7d3c7381d
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
