@@ -8,7 +8,6 @@ public class Monster_Run : StateMachineBehaviour
 	public float speed = 2.5f;
 	public float attackRange = 3f;
 	float nextAttackTime = 1f;
-	float tempSpeed;
 	public float attackRate = 1f;
 
 	Transform player;

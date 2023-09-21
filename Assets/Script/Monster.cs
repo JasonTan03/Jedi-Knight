@@ -10,7 +10,7 @@ public class Monster : MonoBehaviour
     public ParticleSystem bossBlood;
     public GameObject[] item;
     public int numberOfDrop;
-    public float health = 100;
+    public float health;
     public float damage;
     HeatlhBar playerHealth;
     public SpriteRenderer sr;

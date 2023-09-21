@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 220
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: WL_summon_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 141.66667
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34a993b91014c14787fab164c90cff8
+      internalID: -673102427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WL_summon_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 141.66667
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6948c015546cb2345ae0a77946d14c9d
+      internalID: 1285346710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WL_summon_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 0
+        width: 141.66667
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6a39edf0616744f91b165a87c01108
+      internalID: -714644683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WL_summon_3
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 0
+        width: 141.66667
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d215761d59729f41ae19f7c5c13411a
+      internalID: 468354315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WL_summon_4
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 0
+        width: 141.66667
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe66b535f806d5c49a1e90755a629382
+      internalID: 1980051124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WL_summon_5
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 0
+        width: 141.66667
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfc8dba80c4e764ea6a03f5b93a9ef9
+      internalID: 483623299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +258,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WL_summon_0: -673102427
+      WL_summon_1: 1285346710
+      WL_summon_2: -714644683
+      WL_summon_3: 468354315
+      WL_summon_4: 1980051124
+      WL_summon_5: 483623299
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
