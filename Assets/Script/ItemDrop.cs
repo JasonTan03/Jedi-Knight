@@ -14,7 +14,8 @@ public class ItemDrop : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        randomnum = UnityEngine.Random.Range(-3, 3);
+        randomnum = UnityEngine.Random.Range(-3, 4);
+        Debug.Log(randomnum);
         itemRB = GetComponent<Rigidbody2D>();
         itemRB.AddForce(itemRB.mass*Vector2.up*dropForce,ForceMode2D.Impulse); 
     }

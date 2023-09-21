@@ -108,7 +108,7 @@ public class Monster : MonoBehaviour
     {
         for (int i=0;i<numberOfDrop;i++)
         {
-            Instantiate(item[UnityEngine.Random.Range(0,item.Length)],transform.position + new Vector3(0,3,0),quaternion.identity );
+            Instantiate(item[UnityEngine.Random.Range(0,item.Length-1)],transform.position + new Vector3(0,3,0),quaternion.identity );
         }
 
     }

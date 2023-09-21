@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEditor.Experimental;
 using UnityEngine;
 
@@ -56,6 +57,14 @@ public class playerMovement : MonoBehaviour
             animator.SetFloat("move", Mathf.Abs((move*movementSpeed)));
             Flip();
             player.velocity = new Vector2(move * movementSpeed, player.velocity.y);
+            if (math.abs(move) > 0 && isJumping == false)
+            {
+                audioManager.playFootstep();
+            }
+            else
+            {
+                audioManager.pauseFootsetp(); 
+            }
             
         }
 
@@ -91,6 +100,7 @@ public class playerMovement : MonoBehaviour
     {
         if (ground.gameObject.CompareTag("ground"))
         {
+            audioManager.playSFX(audioManager.touchGround); 
             CreateDust();
             isJumping = false;
             animator.SetBool("IsJumping",false);
@@ -99,6 +109,7 @@ public class playerMovement : MonoBehaviour
     }
     private void Flip()
     {
+        
         if (lookRight && move < 0f || !lookRight && move > 0f)
         {
             lookRight = !lookRight;

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class TriggerBoss : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class TriggerBoss : MonoBehaviour
     public GameObject mimic;
     public GameObject nextLevel;
     public GameObject unseal;
+    public Light2D light;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,7 @@ public class TriggerBoss : MonoBehaviour
             mimic.SetActive(true);
             nextLevel.SetActive(true);
             unseal.SetActive(false);
+            light.enabled = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D other)

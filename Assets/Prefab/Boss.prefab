@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 559200839807000121}
   - component: {fileID: 2080640115978247554}
   - component: {fileID: 3559880800963955392}
-  - component: {fileID: 7821345058745025899}
   m_Layer: 7
   m_Name: Boss
   m_TagString: Monster
@@ -37,7 +36,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5768449472248773841
 SpriteRenderer:
@@ -243,17 +242,3 @@ MonoBehaviour:
   player: {fileID: 0}
   isFlipped: 0
   UImanager: {fileID: 0}
---- !u!114 &7821345058745025899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9098060196761275809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49ea1fe366b077d4ba89d6c8d8a4cfc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  dropForce: 5

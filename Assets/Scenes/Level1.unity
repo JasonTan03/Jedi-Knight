@@ -22252,22 +22252,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
-      propertyPath: hit
-      value: 
-      objectReference: {fileID: 8300000, guid: d08c773f94f3afc4695531d74f341087, type: 3}
-    - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
-      propertyPath: c_hit
-      value: 
-      objectReference: {fileID: 8300000, guid: 3c9b2bb33735ba243948524fe1992971, type: 3}
-    - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
-      propertyPath: background
-      value: 
-      objectReference: {fileID: 8300000, guid: 51c45f0830517844183b75e1bb18d48a, type: 3}
-    - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
-      propertyPath: pressButton
-      value: 
-      objectReference: {fileID: 8300000, guid: 4ed3f8e6862925242a3fdc297e3b6799, type: 3}
+    - target: {fileID: 6324055764615532960, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
+      propertyPath: m_Volume
+      value: 0.195
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
