@@ -155,6 +155,8 @@ AudioMixerController:
   m_EnableSuspend: 1
   m_UpdateMode: 0
   m_ExposedParameters:
+  - guid: b959a2a6621a1e942bd58060b8e72392
+    name: FootStep
   - guid: eccd0f40b71d1374d8ec72b2a84e96d3
     name: Music
   - guid: 910e4d65347e02f40af1c533cc3abe6c
@@ -214,11 +216,12 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 75c024fe3257e5e429de82cd774d7be0
   m_FloatValues:
-    eccd0f40b71d1374d8ec72b2a84e96d3: -22.180347
-    e637d982b7461644da87394f263a0ab1: -53.1
+    eccd0f40b71d1374d8ec72b2a84e96d3: -21.476906
+    e637d982b7461644da87394f263a0ab1: -48.7
     910e4d65347e02f40af1c533cc3abe6c: -10.345207
     3eb2d556b477cd44f8eb6d4001ff774e: -75
     288bbf6651a92ce4283a0019e495e0e8: 0
+    b959a2a6621a1e942bd58060b8e72392: -2.2889833
     cd896b88509a97749ae51e2ab7a80c1c: 0
     192a563a42906fc4780e816d4aad5bd2: 1.46
     ff12c4da1dc19a341a1e9a3e4f47c7df: 0
