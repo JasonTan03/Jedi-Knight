@@ -35,7 +35,6 @@ public class TriggerBoss : MonoBehaviour
         {
             boss.SetActive(true);
             audioManager.playBossMusic();
-
         }
 
     }
