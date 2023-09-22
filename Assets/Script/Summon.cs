@@ -23,9 +23,9 @@ public class Summon : MonoBehaviour
     {
         if (mushroomKing.GetComponent<Monster>().health < 0)
         {
-            Debug.Log("Mushroom is dead");
             MushroomKingDead = true;
         }
+
         if (mushroomKing.GetComponent<Monster>().health < 100)
         {
             anim.SetBool("Summon", true);
@@ -33,4 +33,6 @@ public class Summon : MonoBehaviour
             mushroom2.SetActive(true);
         }
     }
+
+
 }

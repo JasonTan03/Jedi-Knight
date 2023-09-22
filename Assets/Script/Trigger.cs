@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -24,8 +23,9 @@ public class TriggerBoss : MonoBehaviour
     {
         if (boss.GetComponent<Monster>().health <= 0)
         {
-            mimic.SetActive(true);
+            
             nextLevel.SetActive(true);
+            mimic.SetActive(true);
             unseal.SetActive(false);
             light.enabled = true;
         }
