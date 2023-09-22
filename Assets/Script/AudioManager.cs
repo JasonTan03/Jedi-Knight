@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
     [Header("----------Audio Source------------")]
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource sfxSource;
-    [SerializeField] AudioSource footstepSource;
+    public AudioSource footstepSource;
     [Header("----------Audio Clip--------------")]
     public AudioClip background;
     public AudioClip jump;
@@ -21,6 +21,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip touchGround;
     public AudioClip appear;
     public AudioClip boss;
+    public AudioClip grass;
+    public AudioClip brick;
     public void Start()
     {
         playBackground(); 

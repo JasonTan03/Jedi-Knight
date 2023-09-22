@@ -20,6 +20,7 @@ TagManager:
   - Death
   - potion
   - UIManager
+  - Change
   layers:
   - Default
   - TransparentFX

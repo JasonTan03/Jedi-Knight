@@ -7,6 +7,7 @@ public class PlayerDeath : MonoBehaviour
 {
     // Start is called before the first frame update
     public int level;
+
     public void gameOver()
        
     {

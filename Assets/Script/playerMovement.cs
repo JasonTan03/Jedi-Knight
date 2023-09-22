@@ -89,6 +89,7 @@ public class playerMovement : MonoBehaviour
 
         if (HeatlhBar.hp == 0)
         {
+            audioManager.pauseFootsetp();
             animator.SetBool("Death",true);
             isalive = false;
             playerDeath.gameOver();

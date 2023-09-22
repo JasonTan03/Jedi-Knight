@@ -234,7 +234,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1048066521
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9434e714fb029e34681aa94c05d21eda, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -319,7 +319,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1048066521
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9b0401e242413c24eb78efb6b55891d7, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
@@ -344,6 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9048998b38a337443af778661bf21c18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  monsTotalHealth: 100
   mon: {fileID: 7469880105132383579}
 --- !u!1 &5885461198479306255
 GameObject:
@@ -362,6 +363,7 @@ GameObject:
   - component: {fileID: 4743424186584890877}
   - component: {fileID: 8314754202390839133}
   - component: {fileID: 8034053634109316601}
+  - component: {fileID: 2636628503102045527}
   m_Layer: 7
   m_Name: b_goblin
   m_TagString: Monster
@@ -426,7 +428,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -38883599
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -421196650, guid: 6d5389fb4d9e16d4b8c8e6cf8e44f305, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -607,3 +609,15 @@ MonoBehaviour:
   attackMask:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &2636628503102045527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885461198479306255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cefd47077411e248b62fedf856dfddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
