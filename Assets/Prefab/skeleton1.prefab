@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1048066521
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9b0401e242413c24eb78efb6b55891d7, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9048998b38a337443af778661bf21c18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  monsTotalHealth: 100
   mon: {fileID: 9021220272178570330}
 --- !u!1 &6182917807774303043
 GameObject:
@@ -192,8 +193,6 @@ GameObject:
   - component: {fileID: 1106762781604227888}
   - component: {fileID: 8838281592176785905}
   - component: {fileID: 9021220272178570330}
-  - component: {fileID: 3512765141855549689}
-  - component: {fileID: 3034345955061540541}
   - component: {fileID: 4625897743884781287}
   m_Layer: 7
   m_Name: skeleton1
@@ -217,7 +216,7 @@ Transform:
   - {fileID: 7916960525434691236}
   - {fileID: 5910424740850619422}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4532207380822435620
 SpriteRenderer:
@@ -258,7 +257,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -38883599
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 762057244, guid: e341a24f6d0efb246b070f9138e615b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -388,38 +387,6 @@ MonoBehaviour:
   player: {fileID: 0}
   isFlipped: 1
   UImanager: {fileID: 0}
---- !u!114 &3512765141855549689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6990886880093045308}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a806a83353185041b8edf038b602fa4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  player: {fileID: 0}
-  flip: 0
-  moveSpeed: 1.2
-  animator: {fileID: 8912527265224388925}
---- !u!114 &3034345955061540541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6990886880093045308}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba2a2bab1d692c8449aee9200f93fa45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 1
 --- !u!114 &4625897743884781287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,7 +478,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1048066521
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9434e714fb029e34681aa94c05d21eda, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

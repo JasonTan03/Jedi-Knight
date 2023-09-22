@@ -24,7 +24,7 @@ public class SwordType : MonoBehaviour
             player.SetBool("MagicSword", true);
             player.SetBool("MushroomSword", false);
         }
-        if (y == 4)
+        if (y == 4 && Summon.MushroomKingDead==true)
         {
             player.SetBool("WoodSword", false);
             player.SetBool("IronSword", false);

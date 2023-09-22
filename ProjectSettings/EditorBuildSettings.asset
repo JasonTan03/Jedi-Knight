@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HiddenLevel.unity
     guid: 50ec73b51b8e89047aa84ecc422d33b4
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: b03b146bda081a144b2b7749cca068d5
   - enabled: 0
     path: Assets/Scenes/Level 2.unity
     guid: ccb7b8e26ab6d0d4bb17017ff978a225

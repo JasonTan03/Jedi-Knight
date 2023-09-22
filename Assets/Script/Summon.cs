@@ -9,6 +9,7 @@ public class Summon : MonoBehaviour
     public GameObject mushroom2;
 
     public Animator anim;
+    public static bool MushroomKingDead = false;
 
 
     // Start is called before the first frame update
@@ -20,6 +21,11 @@ public class Summon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (mushroomKing.GetComponent<Monster>().health < 0)
+        {
+            Debug.Log("Mushroom is dead");
+            MushroomKingDead = true;
+        }
         if (mushroomKing.GetComponent<Monster>().health < 100)
         {
             anim.SetBool("Summon", true);

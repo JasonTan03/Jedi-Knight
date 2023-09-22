@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1048066521
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9434e714fb029e34681aa94c05d21eda, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -157,7 +157,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1048066521
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9b0401e242413c24eb78efb6b55891d7, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
@@ -182,6 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9048998b38a337443af778661bf21c18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  monsTotalHealth: 100
   mon: {fileID: 4595852676911477143}
 --- !u!1 &6169879265750236551
 GameObject:
@@ -277,8 +278,6 @@ GameObject:
   - component: {fileID: 6900557399051090559}
   - component: {fileID: 4121225112675324254}
   - component: {fileID: 4595852676911477143}
-  - component: {fileID: 517928249474042936}
-  - component: {fileID: 2588761765205082932}
   - component: {fileID: 9026157174695313684}
   m_Layer: 7
   m_Name: skeleton2
@@ -302,7 +301,7 @@ Transform:
   - {fileID: 208645576416420309}
   - {fileID: 5214579717640038303}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6878525495701250700
 SpriteRenderer:
@@ -343,7 +342,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -38883599
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 885582284, guid: 03e3a1bd0cec15049ada60aa344cf718, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -473,38 +472,6 @@ MonoBehaviour:
   player: {fileID: 0}
   isFlipped: 1
   UImanager: {fileID: 0}
---- !u!114 &517928249474042936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8878384918948841435}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a806a83353185041b8edf038b602fa4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  player: {fileID: 0}
-  flip: 0
-  moveSpeed: 1.2
-  animator: {fileID: 2991497679971469082}
---- !u!114 &2588761765205082932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8878384918948841435}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba2a2bab1d692c8449aee9200f93fa45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 1
 --- !u!114 &9026157174695313684
 MonoBehaviour:
   m_ObjectHideFlags: 0
