@@ -20,10 +20,10 @@ public class AudioManager : MonoBehaviour
     public AudioClip pressButton;
     public AudioClip touchGround;
     public AudioClip appear;
+    public AudioClip boss;
     public void Start()
     {
-        musicSource.clip = background; 
-        musicSource.Play();
+        playBackground(); 
         if (footstepSource.clip !=null)
         {
             footstepSource.Pause();
@@ -44,6 +44,17 @@ public class AudioManager : MonoBehaviour
     public void pauseFootsetp()
     {
         footstepSource.Pause();
+    }
+    public void playBossMusic()
+    {
+        musicSource.clip = boss;
+        musicSource.Play();
+    }
+
+    public void playBackground()
+    {
+        musicSource.clip = background;
+        musicSource.Play();
     }
 
 

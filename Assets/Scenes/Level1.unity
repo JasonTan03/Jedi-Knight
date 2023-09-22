@@ -22292,6 +22292,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 599242234895246319, guid: ed60657088d757d48845daef5636c0e0, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 2.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 599242234895246319, guid: ed60657088d757d48845daef5636c0e0, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 2.36
+      objectReference: {fileID: 0}
     - target: {fileID: 2743855658436500264, guid: ed60657088d757d48845daef5636c0e0, type: 3}
       propertyPath: staminaBar
       value: 

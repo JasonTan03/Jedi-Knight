@@ -24,6 +24,7 @@ public class Monster : MonoBehaviour
     void Start()
     {
         playerHealth = GameObject.FindGameObjectWithTag("Health").GetComponent<HeatlhBar>();
+        UImanager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UImanager>();    
     }
 
     // Update is called once per frame

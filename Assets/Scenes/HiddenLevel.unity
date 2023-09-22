@@ -265,8 +265,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.68085, y: 1.5879501, z: 0}
-    m_Extent: {x: 4.24865, y: 4.26325, z: 0}
+    m_Center: {x: 1.67615, y: 1.5805501, z: 0}
+    m_Extent: {x: 4.24825, y: 4.26465, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2377,8 +2377,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.9167999, y: -0.98634994, z: 0}
-    m_Extent: {x: 4.7743998, y: 4.2852497, z: 0}
+    m_Center: {x: 0.92034984, y: -0.9734, z: 0}
+    m_Extent: {x: 4.77015, y: 4.2854, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3115,7 +3115,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.5344787}
+  m_Offset: {x: 23.798864, y: -3.9942276}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3126,7 +3126,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 4.0689573}
+  m_Size: {x: 48.59773, y: 10.649584}
   m_EdgeRadius: 0
 --- !u!1001 &1016165592
 PrefabInstance:
@@ -3764,8 +3764,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 2.3098, y: -1.2162, z: 0}
-    m_Extent: {x: 4.2358, y: 4.2747, z: 0}
+    m_Center: {x: 2.31585, y: -1.2167, z: 0}
+    m_Extent: {x: 4.24585, y: 4.2745, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -4045,8 +4045,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.7444, y: -0.98899996, z: 0}
-    m_Extent: {x: 4.2697, y: 4.2515, z: 0}
+    m_Center: {x: 0.74854994, y: -0.97950006, z: 0}
+    m_Extent: {x: 4.26895, y: 4.245, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -35662,8 +35662,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 11.3047, y: -3.1118999, z: 0}
-    m_Extent: {x: 12.424701, y: 7.0457997, z: 0}
+    m_Center: {x: 11.311351, y: -3.09915, z: 0}
+    m_Extent: {x: 12.43155, y: 7.04125, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -43962,13 +43962,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: d08c773f94f3afc4695531d74f341087, type: 3}
     - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
+      propertyPath: boss
+      value: 
+      objectReference: {fileID: 8300000, guid: c52f8eb27381f7b45a5f1cc4b571e803, type: 3}
+    - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
       propertyPath: c_hit
       value: 
       objectReference: {fileID: 8300000, guid: 3c9b2bb33735ba243948524fe1992971, type: 3}
     - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
       propertyPath: background
       value: 
-      objectReference: {fileID: 8300000, guid: c52f8eb27381f7b45a5f1cc4b571e803, type: 3}
+      objectReference: {fileID: 8300000, guid: bb70b9bfde6057d458415248145c5886, type: 3}
     - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
       propertyPath: pressButton
       value: 
@@ -44105,6 +44109,10 @@ PrefabInstance:
     - target: {fileID: 7821345058745025899, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
       propertyPath: dropForce
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8630650476248170316, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
+      propertyPath: monsTotalHealth
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 9098060196761275809, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
       propertyPath: m_Name

@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    public float monsTotalHealth=100f;
     public Monster mon;
     Vector3 localScale;
     Vector3 orignalScale;
@@ -18,7 +19,7 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        localScale.x = (mon.health/100f) * orignalScale.x;
+        localScale.x = (mon.health/monsTotalHealth) * orignalScale.x;
         transform.localScale = localScale;
     }
 }

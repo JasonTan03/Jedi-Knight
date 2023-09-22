@@ -10,11 +10,12 @@ public class TriggerBoss : MonoBehaviour
     public GameObject nextLevel;
     public GameObject unseal;
     public Light2D light;
+    private AudioManager audioManager;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        audioManager  = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -31,6 +32,20 @@ public class TriggerBoss : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
+        {
             boss.SetActive(true);
+            audioManager.playBossMusic();
+
+        }
+
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        { 
+            audioManager.playBackground();
+
+        }
     }
 }

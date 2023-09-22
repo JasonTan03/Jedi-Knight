@@ -19,6 +19,7 @@ TagManager:
   - Mimic
   - Death
   - potion
+  - UIManager
   layers:
   - Default
   - TransparentFX
@@ -31,7 +32,7 @@ TagManager:
   - powerUp
   - PowerUp2
   - PowerUP3
-  - 
+  - Potion
   - 
   - 
   - 
@@ -65,11 +66,11 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Monster health
-    uniqueID: 1048066521
-    locked: 0
   - name: Monster
     uniqueID: 4256083697
+    locked: 0
+  - name: Monster health
+    uniqueID: 1048066521
     locked: 0
   - name: Npc
     uniqueID: 3353110735
@@ -79,4 +80,7 @@ TagManager:
     locked: 0
   - name: PowerUp
     uniqueID: 2452133747
+    locked: 0
+  - name: Heal
+    uniqueID: 2856188283
     locked: 0
