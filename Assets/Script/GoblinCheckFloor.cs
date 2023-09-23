@@ -18,12 +18,14 @@ public class GoblinCheckFloor : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D other)
     {
+        if(other.gameObject.CompareTag("ground"))
         gameObject.GetComponent<Rigidbody2D>().gravityScale = 100;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        gameObject.GetComponent<Rigidbody2D>().gravityScale = 1;
+        if (other.gameObject.CompareTag("ground"))
+            gameObject.GetComponent<Rigidbody2D>().gravityScale = 1;
     }
 
 

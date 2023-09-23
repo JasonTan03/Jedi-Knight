@@ -418,11 +418,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7997358140997558196, guid: b84f8cf29b78b6d4a8c1270d89e269c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 47.43
+      value: 44.59
       objectReference: {fileID: 0}
     - target: {fileID: 7997358140997558196, guid: b84f8cf29b78b6d4a8c1270d89e269c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.94
+      value: -5.31
       objectReference: {fileID: 0}
     - target: {fileID: 7997358140997558196, guid: b84f8cf29b78b6d4a8c1270d89e269c5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1072,11 +1072,10 @@ MonoBehaviour:
   - Welcome to this faraway land, i see you have come here to become the Jedi Knight.
   - My name is Bob, let me tell you some basic of the game.
   - You can press A, D to move left and right. Press J or K for light or heavy attack.
-  - Press Space bar to jump
-  - Press Left Shit to Dash
-  - Press L to use potion to recover Health
+  - Press Space bar to jump.Press Left Shit to Dash.Press L to use potion to recover
+    Health
   contButton: {fileID: 2117036602}
-  wordSpeed: 0.06
+  wordSpeed: 0.01
   playerIsClose: 0
 --- !u!58 &344529774
 CircleCollider2D:
@@ -2250,11 +2249,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7997358140997558196, guid: b84f8cf29b78b6d4a8c1270d89e269c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 55.59
+      value: 49.12
       objectReference: {fileID: 0}
     - target: {fileID: 7997358140997558196, guid: b84f8cf29b78b6d4a8c1270d89e269c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.95
+      value: -3.04
       objectReference: {fileID: 0}
     - target: {fileID: 7997358140997558196, guid: b84f8cf29b78b6d4a8c1270d89e269c5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3387,7 +3386,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1642770151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3485,12 +3484,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 41702bb5cc2654d4baf0e86732d65404, type: 3}
+    m_FontSize: 70
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 40
+    m_MaxSize: 120
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -3523,7 +3522,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000013351, y: -125}
+  m_AnchoredPosition: {x: -0.000013351, y: -15}
   m_SizeDelta: {x: 801.5532, y: 339.7457}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1684520720
@@ -21165,12 +21164,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
+    m_Font: {fileID: 12800000, guid: 41702bb5cc2654d4baf0e86732d65404, type: 3}
+    m_FontSize: 140
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 8
-    m_MaxSize: 80
+    m_MinSize: 1
+    m_MaxSize: 140
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -21203,7 +21202,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 184.5, y: -19.9}
+  m_AnchoredPosition: {x: 184.5, y: 9}
   m_SizeDelta: {x: 209.3187, y: 116.4678}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1917774220 stripped
@@ -21985,7 +21984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4439629971280316635, guid: 569910b62992ea240ac5bef4bde96ff6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.8046875
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4439629971280316635, guid: 569910b62992ea240ac5bef4bde96ff6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -22278,6 +22277,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 8300000, guid: 51c45f0830517844183b75e1bb18d48a, type: 3}
     - target: {fileID: 6324055764615532960, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
       propertyPath: m_Volume
       value: 0.195

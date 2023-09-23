@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class PortalDissapear : MonoBehaviour
 {
-    private float dissapear;
     public GameObject player;
     // Start is called before the first frame update
     void Start()

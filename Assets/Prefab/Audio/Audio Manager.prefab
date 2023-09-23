@@ -50,7 +50,7 @@ MonoBehaviour:
   musicSource: {fileID: 3583256300108150861}
   sfxSource: {fileID: 988755475093349061}
   footstepSource: {fileID: 6324055764615532960}
-  background: {fileID: 8300000, guid: 51c45f0830517844183b75e1bb18d48a, type: 3}
+  background: {fileID: 8300000, guid: 3ed75558ebf414c45a2bbd450a91c4bd, type: 3}
   jump: {fileID: 8300000, guid: 099edf08b57f9e54bae1c4234077240c, type: 3}
   dash: {fileID: 8300000, guid: 89062b6bafe907241a13df0b50866a1c, type: 3}
   attack: {fileID: 8300000, guid: 2922ec1490dcf1e48b03afed2878f5bb, type: 3}
@@ -59,6 +59,10 @@ MonoBehaviour:
   heal: {fileID: 8300000, guid: 41de9e5ac29882d4683367c31ca9e408, type: 3}
   pressButton: {fileID: 8300000, guid: 4ed3f8e6862925242a3fdc297e3b6799, type: 3}
   touchGround: {fileID: 8300000, guid: eec53751c4e79a7469fc34e774360128, type: 3}
+  appear: {fileID: 0}
+  boss: {fileID: 8300000, guid: 5778b078f1d3bb9459d029b4fc8cf5dd, type: 3}
+  grass: {fileID: 8300000, guid: 398a631f92a5b2e4fbbf36e67e05e653, type: 3}
+  brick: {fileID: 8300000, guid: 8ce4499bbd5a13e408937e979191ac28, type: 3}
 --- !u!1 &1996163509219560062
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,8 +332,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 7051535469224217386, guid: 4263b2e7408046d4ea05391a2896708c, type: 2}
   m_audioClip: {fileID: 8300000, guid: 398a631f92a5b2e4fbbf36e67e05e653, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.256
-  m_Pitch: 0.88
+  m_Volume: 0.33
+  m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -456,7 +460,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -3026744196113628984, guid: 4263b2e7408046d4ea05391a2896708c, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.347
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
