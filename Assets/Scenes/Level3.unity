@@ -547,8 +547,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.83065003, y: 0.3642999, z: 0}
-    m_Extent: {x: 2.69065, y: 3.8017, z: 0}
+    m_Center: {x: 0.8233, y: 0.37014997, z: 0}
+    m_Extent: {x: 2.6873999, y: 3.8053498, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -798,8 +798,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.4138501, y: 0.19529998, z: 0}
-    m_Extent: {x: 2.05935, y: 3.3504, z: 0}
+    m_Center: {x: 1.41565, y: 0.1961, z: 0}
+    m_Extent: {x: 2.05155, y: 3.3536, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -11659,8 +11659,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.20720005, y: -2.91805, z: 0}
-    m_Extent: {x: 2.9986, y: 3.42085, z: 0}
+    m_Center: {x: 0.21580005, y: -2.91275, z: 0}
+    m_Extent: {x: 3.0002, y: 3.4139502, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -12191,8 +12191,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.1652501, y: -3.4556, z: 0}
-    m_Extent: {x: 2.80075, y: 3.8102, z: 0}
+    m_Center: {x: 1.17135, y: -3.4616501, z: 0}
+    m_Extent: {x: 2.79395, y: 3.80805, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -12800,7 +12800,7 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1821842344}
   dialogueText: {fileID: 1654119566}
   dialogue:
-  - GoodLuck Defeating the Sword King!
+  - Good luck Defeating the Sword King!
   contButton: {fileID: 2117036602}
   wordSpeed: 0.06
   playerIsClose: 0
@@ -13040,8 +13040,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.24994999, y: 0.9903, z: 0}
-    m_Extent: {x: 1.37165, y: 2.9372, z: 0}
+    m_Center: {x: 0.24524999, y: 0.98850006, z: 0}
+    m_Extent: {x: 1.36525, y: 2.9429, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -13123,8 +13123,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.20764995, y: -1.5673999, z: 0}
-    m_Extent: {x: 6.4127502, y: 3.9039998, z: 0}
+    m_Center: {x: 0.2109499, y: -1.56065, z: 0}
+    m_Extent: {x: 6.40935, y: 3.9021502, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -27892,7 +27892,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CONTINUE
+  m_Text: 
 --- !u!222 &1632847038
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28016,12 +28016,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 41702bb5cc2654d4baf0e86732d65404, type: 3}
+    m_FontSize: 70
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 40
+    m_MaxSize: 70
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -28054,7 +28054,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000013351, y: -125}
+  m_AnchoredPosition: {x: -0.000013351, y: 0}
   m_SizeDelta: {x: 801.5532, y: 339.7457}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1666685840
@@ -48346,7 +48346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1821842345
 RectTransform:
   m_ObjectHideFlags: 0
@@ -48382,7 +48382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -48576,8 +48576,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.067200005, y: -2.1268501, z: 0}
-    m_Extent: {x: 1.9728, y: 3.5216498, z: 0}
+    m_Center: {x: -0.06730002, y: -2.1227999, z: 0}
+    m_Extent: {x: 1.9749999, y: 3.5235, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -49290,8 +49290,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.011399984, y: -2.6499, z: 0}
-    m_Extent: {x: 1.5646, y: 3.8512, z: 0}
+    m_Center: {x: -0.0072000027, y: -2.6595, z: 0}
+    m_Extent: {x: 1.5741, y: 3.8499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -49452,8 +49452,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: fe919474335c11945b4e5cd7dba8488f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -49489,7 +49489,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 351, y: -202}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1266650649262418672
 PrefabInstance:

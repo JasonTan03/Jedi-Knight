@@ -418,11 +418,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7997358140997558196, guid: b84f8cf29b78b6d4a8c1270d89e269c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 44.59
+      value: 41.93
       objectReference: {fileID: 0}
     - target: {fileID: 7997358140997558196, guid: b84f8cf29b78b6d4a8c1270d89e269c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.31
+      value: 1.23
       objectReference: {fileID: 0}
     - target: {fileID: 7997358140997558196, guid: b84f8cf29b78b6d4a8c1270d89e269c5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2742,7 +2742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2816771229964786855, guid: 18c6bbc902305fd4aa13299378adcecb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3893625347919003286, guid: 18c6bbc902305fd4aa13299378adcecb, type: 3}
       propertyPath: player
@@ -3360,7 +3360,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CONTINUE
+  m_Text: 
 --- !u!222 &1632847038
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20083,7 +20083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21863,8 +21863,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: fe919474335c11945b4e5cd7dba8488f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -21900,7 +21900,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 351, y: -202}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &115661673740232688
 PrefabInstance:
