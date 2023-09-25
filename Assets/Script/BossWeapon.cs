@@ -11,12 +11,15 @@ public class BossWeapon : MonoBehaviour
 	public float attackRange = 1f;
 	public LayerMask attackMask;
 	HeatlhBar health;
+	AudioManager audioManager;
+    private UImanager UImanager;
 
-	private void Start()
+    private void Start()
     {
 		health = GameObject.FindGameObjectWithTag("Health").GetComponent<HeatlhBar>();
-
-	}
+		audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        UImanager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UImanager>();
+    }
 
 	public void Attack()
 	{
@@ -27,8 +30,10 @@ public class BossWeapon : MonoBehaviour
 		Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
 		if (colInfo != null)
 		{
-			health.DecreaseHP(attackDamage);
-		}
+            UImanager.MonsterDamage(gameObject, attackDamage);
+            health.DecreaseHP(attackDamage);
+			audioManager.playSFX(audioManager.hitPlayer);
+        }
 	}
 
 	public void EnragedAttack()
@@ -40,7 +45,8 @@ public class BossWeapon : MonoBehaviour
 		Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
 		if (colInfo != null)
 		{
-			colInfo.GetComponent<HeatlhBar>().DecreaseHP(enragedAttackDamage);
+            UImanager.MonsterDamage(gameObject, attackDamage);
+            colInfo.GetComponent<HeatlhBar>().DecreaseHP(enragedAttackDamage);
 		}
 	}
 
@@ -52,4 +58,19 @@ public class BossWeapon : MonoBehaviour
 
 		Gizmos.DrawWireSphere(pos, attackRange);
 	}
+
+	void playAttackSound()
+	{
+		audioManager.playSFX(audioManager.bossAttack);
+	}
+
+    void playwalkSound()
+    {
+        audioManager.playSFX(audioManager.bossWalk);
+    }
+
+    void playDeathSound()
+    {
+        audioManager.playSFX(audioManager.bossDeath);
+    }
 }

@@ -27,6 +27,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void Pause()
     {
+        pauseMenu.transform.SetAsLastSibling();
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         isPause = true;

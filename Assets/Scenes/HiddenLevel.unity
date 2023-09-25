@@ -265,8 +265,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6747, y: 1.5849999, z: 0}
-    m_Extent: {x: 4.2541, y: 4.2611, z: 0}
+    m_Center: {x: 1.6752499, y: 1.5845, z: 0}
+    m_Extent: {x: 4.25265, y: 4.2574, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2148,7 +2148,7 @@ MonoBehaviour:
   m_Intensity: 0.1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000d939783ecb07310495af8fb4f1aeaefd17f864b3d3c7381d73972892
+  m_ApplyToSortingLayers: 00000000cb07310495af8fb417f864b3d3c7381d73972892f1aeaefd
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -2452,8 +2452,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.92165005, y: -0.97870004, z: 0}
-    m_Extent: {x: 4.77715, y: 4.2844, z: 0}
+    m_Center: {x: 0.9239001, y: -0.9774499, z: 0}
+    m_Extent: {x: 4.7729, y: 4.29135, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2887,7 +2887,7 @@ GameObject:
   - component: {fileID: 943257130}
   m_Layer: 0
   m_Name: UIManager
-  m_TagString: Untagged
+  m_TagString: UIManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3432,8 +3432,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 2.3102, y: -1.2181, z: 0}
-    m_Extent: {x: 4.2469997, y: 4.2759, z: 0}
+    m_Center: {x: 2.3106, y: -1.2139999, z: 0}
+    m_Extent: {x: 4.2399, y: 4.2778, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3687,8 +3687,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.75109994, y: -0.9870001, z: 0}
-    m_Extent: {x: 4.2752, y: 4.2491, z: 0}
+    m_Center: {x: 0.7535, y: -0.9792001, z: 0}
+    m_Extent: {x: 4.2757, y: 4.2488003, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -34885,6 +34885,88 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1552684241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1552684243}
+  - component: {fileID: 1552684242}
+  m_Layer: 0
+  m_Name: HealthLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1552684242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552684241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 1
+  m_LightType: 4
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_LightVolumeIntensity: 1
+  m_LightVolumeIntensityEnabled: 0
+  m_ApplyToSortingLayers: 7bf93daad939783e
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowIntensityEnabled: 0
+  m_ShadowIntensity: 0.75
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
+--- !u!4 &1552684243
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552684241}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -21.65347, y: 0.09239961, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1563664405 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9098060196761275809, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
@@ -35229,8 +35311,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 11.3149, y: -3.1079001, z: 0}
-    m_Extent: {x: 12.4238, y: 7.0481, z: 0}
+    m_Center: {x: 11.3156, y: -3.106, z: 0}
+    m_Extent: {x: 12.4229, y: 7.0352, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -43068,11 +43150,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4191986391899724190, guid: 74caeafb0c7b85e4aa5039d3985d3d24, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 38.39
+      value: 26.17
       objectReference: {fileID: 0}
     - target: {fileID: 4191986391899724190, guid: 74caeafb0c7b85e4aa5039d3985d3d24, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.01
+      value: -9.73
       objectReference: {fileID: 0}
     - target: {fileID: 4191986391899724190, guid: 74caeafb0c7b85e4aa5039d3985d3d24, type: 3}
       propertyPath: m_LocalPosition.z
@@ -43301,9 +43383,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 3c9b2bb33735ba243948524fe1992971, type: 3}
     - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
+      propertyPath: beinghit
+      value: 
+      objectReference: {fileID: 8300000, guid: eee8bbfb9c009704bbaba21a256a6fd4, type: 3}
+    - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
+      propertyPath: bossWalk
+      value: 
+      objectReference: {fileID: 8300000, guid: 176e7048fd58e334b8aed876bd85b14e, type: 3}
+    - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
+      propertyPath: hitPlayer
+      value: 
+      objectReference: {fileID: 8300000, guid: eee8bbfb9c009704bbaba21a256a6fd4, type: 3}
+    - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
       propertyPath: background
       value: 
       objectReference: {fileID: 8300000, guid: 69811caed2d979e438ef954f402fdbb7, type: 3}
+    - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
+      propertyPath: bossAttack
+      value: 
+      objectReference: {fileID: 8300000, guid: 164d8d0110f3afd47bb9cdc75c0452f6, type: 3}
     - target: {fileID: 5332917998565939057, guid: 411888fdb54374c4b94197ebc0c3027d, type: 3}
       propertyPath: pressButton
       value: 
@@ -43357,6 +43455,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 97782404}
+    - target: {fileID: 3559880800963955392, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
+      propertyPath: diedSecond
+      value: 1.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3559880800963955392, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
       propertyPath: numberOfDrop
       value: 3
@@ -43451,7 +43553,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9098060196761275809, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098060196761275809, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
+      propertyPath: m_TagString
+      value: Boss
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7821345058745025899, guid: 6159da0c57a251645a295834c74a9b27, type: 3}

@@ -20,12 +20,13 @@ public class Monster : MonoBehaviour
     public Transform player;
     public bool isFlipped = false;
     public UImanager UImanager;
+    public float diedSecond = 0.8f;
 
     // Start is called before the first frame update
     void Start()
     {
         playerHealth = GameObject.FindGameObjectWithTag("Health").GetComponent<HeatlhBar>();
-        UImanager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UImanager>();    
+        UImanager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UImanager>();   
     }
 
     // Update is called once per frame
@@ -45,6 +46,7 @@ public class Monster : MonoBehaviour
             health = 0;
             Instantiate(bossBlood,transform.position, Quaternion.identity);
             DropItem();
+            gameObject.transform.GetChild(0).gameObject.SetActive(false);
             StartCoroutine(monsterDead());
         }
     }
@@ -74,7 +76,7 @@ public class Monster : MonoBehaviour
     IEnumerator monsterDead()
     {
         anim.SetBool("IsDead", true);
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(diedSecond);
         Destroy(gameObject);
     }
     
@@ -82,8 +84,12 @@ public class Monster : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            UImanager.MonsterDamage(gameObject, damage);
-            playerHealth.DecreaseHP(damage);
+            if (damage > 0)
+            {
+                UImanager.MonsterDamage(gameObject, damage);
+                playerHealth.DecreaseHP(damage);
+            }
+            
         }
     }
 

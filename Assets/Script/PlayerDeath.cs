@@ -12,6 +12,7 @@ public class PlayerDeath : MonoBehaviour
        
     {
         gameObject.SetActive(true);
+        gameObject.transform.SetAsLastSibling();
         StartCoroutine(WaitToDie());
         
     }

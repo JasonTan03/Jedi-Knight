@@ -16,6 +16,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip attack;
     public AudioClip hit;
     public AudioClip c_hit;
+
+    public AudioClip hitPlayer;
     public AudioClip heal;
     public AudioClip pressButton;
     public AudioClip touchGround;
@@ -23,6 +25,9 @@ public class AudioManager : MonoBehaviour
     public AudioClip boss;
     public AudioClip grass;
     public AudioClip brick;
+    public AudioClip bossAttack;
+    public AudioClip bossWalk;
+    public AudioClip bossDeath;
     public void Start()
     {
         playBackground(); 
