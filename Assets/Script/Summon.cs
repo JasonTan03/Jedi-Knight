@@ -21,7 +21,7 @@ public class Summon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (mushroomKing.GetComponent<Monster>().health < 0)
+        if (mushroomKing.GetComponent<Monster>().health <= 0)
         {
             MushroomKingDead = true;
         }

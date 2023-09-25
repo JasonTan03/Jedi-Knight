@@ -2358,8 +2358,8 @@ MonoBehaviour:
   dialogueText: {fileID: 1654119566}
   dialogue:
   - Hey don't point your sword at me, despite my look i am a good mimic you know.
-    Since you completed the tutotrial, here take this Iron Sword. Dont forget to
-    keep you eye peel to look out for power up.
+    Since you completed the tutorial, here take this Iron Sword. Dont forget to keep
+    you eye peel to look out for power up.
   contButton: {fileID: 2117036602}
   wordSpeed: 0.06
   playerIsClose: 0

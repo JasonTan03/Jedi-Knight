@@ -265,8 +265,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6752499, y: 1.5845, z: 0}
-    m_Extent: {x: 4.25265, y: 4.2574, z: 0}
+    m_Center: {x: 1.6682501, y: 1.5761001, z: 0}
+    m_Extent: {x: 4.25325, y: 4.2583, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2452,8 +2452,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.9239001, y: -0.9774499, z: 0}
-    m_Extent: {x: 4.7729, y: 4.29135, z: 0}
+    m_Center: {x: 0.9159001, y: -0.9847499, z: 0}
+    m_Extent: {x: 4.7809, y: 4.28195, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3432,8 +3432,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 2.3106, y: -1.2139999, z: 0}
-    m_Extent: {x: 4.2399, y: 4.2778, z: 0}
+    m_Center: {x: 2.31595, y: -1.2112999, z: 0}
+    m_Extent: {x: 4.24275, y: 4.2763, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3687,8 +3687,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.7535, y: -0.9792001, z: 0}
-    m_Extent: {x: 4.2757, y: 4.2488003, z: 0}
+    m_Center: {x: 0.75400007, y: -0.97994995, z: 0}
+    m_Extent: {x: 4.2664, y: 4.25385, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -35311,8 +35311,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 11.3156, y: -3.106, z: 0}
-    m_Extent: {x: 12.4229, y: 7.0352, z: 0}
+    m_Center: {x: 11.31855, y: -3.1073499, z: 0}
+    m_Extent: {x: 12.425249, y: 7.03565, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -43553,7 +43553,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9098060196761275809, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9098060196761275809, guid: 6159da0c57a251645a295834c74a9b27, type: 3}
       propertyPath: m_TagString
