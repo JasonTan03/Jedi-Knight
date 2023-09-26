@@ -21,6 +21,8 @@ TagManager:
   - potion
   - UIManager
   - Change
+  - bob
+  - mimic
   layers:
   - Default
   - TransparentFX

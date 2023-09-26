@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource sfxSource;
     public AudioSource footstepSource;
+    public AudioSource npc;
     [Header("----------Audio Clip--------------")]
     public AudioClip background;
     public AudioClip jump;
@@ -28,10 +29,17 @@ public class AudioManager : MonoBehaviour
     public AudioClip bossAttack;
     public AudioClip bossWalk;
     public AudioClip bossDeath;
+    public AudioClip bob;
+    public AudioClip mimic;
     public void Start()
     {
         playBackground(); 
         if (footstepSource.clip !=null)
+        {
+            footstepSource.Pause();
+        }
+
+        if (npc.clip != null)
         {
             footstepSource.Pause();
         }
@@ -62,6 +70,17 @@ public class AudioManager : MonoBehaviour
     {
         musicSource.clip = background;
         musicSource.Play();
+    }
+
+
+    public void BobClip()
+    {
+        npc.clip = bob;
+    }
+
+    public void MimicClip()
+    {
+        npc.clip = mimic;
     }
 
 

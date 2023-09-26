@@ -25,15 +25,27 @@ public class NPC : MonoBehaviour
         {
             audioManager.playSFX(audioManager.pressButton);
 
+            
+
             if (dialoguePanel.activeInHierarchy)
             {
                 zeroText();
-                
             }
             else
             {
                 dialoguePanel.SetActive(true); 
                 StartCoroutine(typing());
+                if (gameObject.CompareTag("bob"))
+                {
+                    audioManager.BobClip();
+                    audioManager.npc.Play();
+                }
+                else
+                {
+                    audioManager.MimicClip();
+                    audioManager.npc.Play();
+                }
+               
             }
         }
 
@@ -48,6 +60,7 @@ public class NPC : MonoBehaviour
         dialogueText.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
+        audioManager.npc.Stop();
     }
 
     IEnumerator typing()
