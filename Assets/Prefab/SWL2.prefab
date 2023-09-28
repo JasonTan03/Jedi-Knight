@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: 2429644391481399956}
   - component: {fileID: 4069691161989030368}
   - component: {fileID: 8958978744067699107}
-  - component: {fileID: 8282577188848257880}
-  - component: {fileID: 510745407837714616}
   - component: {fileID: 7594020675494413907}
   m_Layer: 7
   m_Name: SWL2
@@ -23,7 +21,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4191986391899724190
 Transform:
   m_ObjectHideFlags: 0
@@ -39,7 +37,7 @@ Transform:
   - {fileID: 1306327209820408163}
   - {fileID: 7699534436053682268}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7601894336436487603
 SpriteRenderer:
@@ -80,7 +78,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -38883599
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2058456593, guid: f3574d6491ded6f4ab827b791b374da5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -202,7 +200,7 @@ MonoBehaviour:
   item:
   - {fileID: 661152579936983423, guid: e40d2aa54e51ac0488bae71fbe5da937, type: 3}
   numberOfDrop: 1
-  health: 100
+  health: 170
   damage: 5
   sr: {fileID: 7601894336436487603}
   delay: 1
@@ -210,38 +208,7 @@ MonoBehaviour:
   player: {fileID: 0}
   isFlipped: 0
   UImanager: {fileID: 0}
---- !u!114 &8282577188848257880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2790864240958986250}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a806a83353185041b8edf038b602fa4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  player: {fileID: 0}
-  flip: 0
-  moveSpeed: 1.2
-  animator: {fileID: 8551980851627512200}
---- !u!114 &510745407837714616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2790864240958986250}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba2a2bab1d692c8449aee9200f93fa45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 1
+  diedSecond: 0.8
 --- !u!114 &7594020675494413907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,7 +380,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1048066521
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9b0401e242413c24eb78efb6b55891d7, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
@@ -438,6 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9048998b38a337443af778661bf21c18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  monsTotalHealth: 170
   mon: {fileID: 8958978744067699107}
 --- !u!1 &8783580108288866750
 GameObject:
@@ -511,7 +479,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1048066521
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9434e714fb029e34681aa94c05d21eda, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

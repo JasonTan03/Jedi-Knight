@@ -182,88 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9048998b38a337443af778661bf21c18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsTotalHealth: 100
+  monsTotalHealth: 200
   mon: {fileID: 4595852676911477143}
---- !u!1 &6169879265750236551
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5214579717640038303}
-  - component: {fileID: 5550441951501267553}
-  - component: {fileID: 3721550099329455596}
-  m_Layer: 0
-  m_Name: Range
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5214579717640038303
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6169879265750236551}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.784, y: -0.085, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4062135220804317350}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &5550441951501267553
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6169879265750236551}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.77914053, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.2521367
---- !u!114 &3721550099329455596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6169879265750236551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4fda7353a7885d41850d3d6bfb9747f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8878384918948841435
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,7 +205,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4062135220804317350
 Transform:
   m_ObjectHideFlags: 0
@@ -299,9 +219,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 208645576416420309}
-  - {fileID: 5214579717640038303}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6878525495701250700
 SpriteRenderer:
@@ -464,7 +383,7 @@ MonoBehaviour:
   item:
   - {fileID: 661152579936983423, guid: e40d2aa54e51ac0488bae71fbe5da937, type: 3}
   numberOfDrop: 1
-  health: 100
+  health: 200
   damage: 5
   sr: {fileID: 6878525495701250700}
   delay: 1
@@ -472,6 +391,7 @@ MonoBehaviour:
   player: {fileID: 0}
   isFlipped: 1
   UImanager: {fileID: 0}
+  diedSecond: 0.8
 --- !u!114 &9026157174695313684
 MonoBehaviour:
   m_ObjectHideFlags: 0
