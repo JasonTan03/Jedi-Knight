@@ -298,7 +298,7 @@ MonoBehaviour:
   item:
   - {fileID: 661152579936983423, guid: e40d2aa54e51ac0488bae71fbe5da937, type: 3}
   numberOfDrop: 2
-  health: 2
+  health: 200
   damage: 5
   sr: {fileID: 4532207380822435620}
   delay: 1

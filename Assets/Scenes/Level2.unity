@@ -7341,8 +7341,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -8.82695, y: -6.2408495, z: 0}
-    m_Extent: {x: 15.01915, y: 13.40755, z: 0}
+    m_Center: {x: -8.8228, y: -6.2335496, z: 0}
+    m_Extent: {x: 15.027901, y: 13.40995, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7440,8 +7440,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.49615, y: -0.77895, z: 0}
-    m_Extent: {x: 2.71375, y: 6.7162504, z: 0}
+    m_Center: {x: -1.4900999, y: -0.77760005, z: 0}
+    m_Extent: {x: 2.71, y: 6.7173004, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -9408,8 +9408,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -3.3590002, y: -0.5323, z: 0}
-    m_Extent: {x: 5.4636, y: 7.9283, z: 0}
+    m_Center: {x: -3.3678498, y: -0.5207, z: 0}
+    m_Extent: {x: 5.46775, y: 7.9218, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -38120,8 +38120,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -8.82825, y: -6.23205, z: 0}
-    m_Extent: {x: 14.72395, y: 13.10285, z: 0}
+    m_Center: {x: -8.8307, y: -6.2383494, z: 0}
+    m_Extent: {x: 14.710899, y: 13.100849, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -38798,8 +38798,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -8.8218, y: -6.2336497, z: 0}
-    m_Extent: {x: 14.9669, y: 13.358749, z: 0}
+    m_Center: {x: -8.8316, y: -6.2334003, z: 0}
+    m_Extent: {x: 14.9695, y: 13.3477, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -44123,8 +44123,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.020850003, y: 0.30775, z: 0}
-    m_Extent: {x: 0.87665, y: 0.58735, z: 0}
+    m_Center: {x: 0.03005001, y: 0.29775, z: 0}
+    m_Extent: {x: 0.87135005, y: 0.59305, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -44230,8 +44230,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.1252999, y: -3.2948003, z: 0}
-    m_Extent: {x: 6.643, y: 11.4555, z: 0}
+    m_Center: {x: -1.13515, y: -3.2965999, z: 0}
+    m_Extent: {x: 6.63865, y: 11.4576, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -44479,8 +44479,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.19795012, y: -1.6362002, z: 0}
-    m_Extent: {x: 4.82915, y: 9.3127, z: 0}
+    m_Center: {x: 0.19724989, y: -1.6398997, z: 0}
+    m_Extent: {x: 4.82695, y: 9.318399, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -94201,8 +94201,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.09035, y: 1.1431, z: 0}
-    m_Extent: {x: 0.36625, y: 0.3789, z: 0}
+    m_Center: {x: -0.0871, y: 1.1457, z: 0}
+    m_Extent: {x: 0.3654, y: 0.3846, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -94492,8 +94492,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -8.8307495, y: -6.23565, z: 0}
-    m_Extent: {x: 14.78105, y: 13.16565, z: 0}
+    m_Center: {x: -8.8246, y: -6.2365503, z: 0}
+    m_Extent: {x: 14.7689, y: 13.16945, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
