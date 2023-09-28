@@ -11,6 +11,7 @@ public class TriggerBoss : MonoBehaviour
     public GameObject unseal;
     public Light2D light;
     private AudioManager audioManager;
+    public float waitPortal=1.2f;
 
     // Start is called before the first frame update
     void Start()
@@ -23,11 +24,12 @@ public class TriggerBoss : MonoBehaviour
     {
         if (boss.GetComponent<Monster>().health <= 0)
         {
-            
-            nextLevel.SetActive(true);
+            StartCoroutine(Wait());
+   
             mimic.SetActive(true);
             unseal.SetActive(false);
             light.enabled = true;
+            
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
@@ -47,5 +49,11 @@ public class TriggerBoss : MonoBehaviour
             audioManager.playBackground();
 
         }
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(waitPortal);
+        nextLevel.SetActive(true);
     }
 }
